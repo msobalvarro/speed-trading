@@ -138,8 +138,9 @@ div.main-container div.content div.row img.cover-image {
 }
 
 div.main-container div.content div.row img.cover-image.position {
-    object-position: left;
-  }
+  object-position: left;
+  object-fit: contain;
+}
 
 div.main-container div.content div.row div.info {
   padding: 20px 5%;
