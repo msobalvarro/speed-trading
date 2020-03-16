@@ -7,3 +7,6 @@ $('#closer').addEventListener('click', () => {
 $('#open').addEventListener('click', () => {
     $('#modal').classList.toggle('hidden')
 })
+
+
+$('#year').innerHTML = new Date().getFullYear()
