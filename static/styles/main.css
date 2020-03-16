@@ -338,4 +338,28 @@ footer a.terminos {
   footer a.terminos {
     text-align: center;
   }
+
+  .modal {
+    overflow: auto;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+  }
+
+  .modal button {
+    position: fixed;
+    top: unset;
+    bottom: 2%;
+    left: 2.5%;
+    width: 95%;
+    /* right: 5%; */
+  }
+
+  .modal iframe {
+    width: 100%;
+    /* right: 5%; */
+  }
+
+  .modal p {
+    width: 90%;
+  }
 }
