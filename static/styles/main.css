@@ -108,7 +108,7 @@ div.main-container {
 /* <ContainerRows> */
 div.main-container div.content {
     flex: 1;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 15px;
 }
 
@@ -139,6 +139,11 @@ div.main-container div.content div.row img.cover-image {
 div.main-container div.content div.row div.info {
     padding: 20px 5%;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 div.main-container div.content div.row div.info h2 {
@@ -153,7 +158,18 @@ div.main-container div.content div.row div.info p {
 
 div.main-container div.content div.row div.info h3 {
     color: #2db66b;
+    margin: 20px auto;
     text-transform: uppercase;
+}
+
+div.main-container div.content div.row div.info .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.main-container div.content div.row div.info .flex .flex-element {
+    width: 50%;
 }
 
 /* </ContainerRows> */
