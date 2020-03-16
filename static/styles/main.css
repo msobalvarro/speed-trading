@@ -137,6 +137,10 @@ div.main-container div.content div.row img.cover-image {
   width: 50%;
 }
 
+div.main-container div.content div.row img.cover-image.position {
+    object-position: left;
+  }
+
 div.main-container div.content div.row div.info {
   padding: 20px 5%;
   color: #fff;
