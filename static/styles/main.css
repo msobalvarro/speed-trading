@@ -179,7 +179,7 @@ div.main-container aside {
 }
 
 /* Modal */
-#modal {
+.modal {
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -194,17 +194,23 @@ div.main-container aside {
     width: 100%;
 }
 
-#modal.hidden {
+.modal.hidden {
     display: none;
 }
 
-#modal h2 {
+.modal h2 {
     color: #FFF;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
-#modal button {
+.modal p {
+    color: #FFF;
+    text-align: justify;
+    width: 50%;    
+}
+
+.modal button {
     border: none;
     border-radius: 5px;
     font-size: 1.2em;
@@ -215,9 +221,20 @@ div.main-container aside {
     right: 5%;
 }
 
-#modal iframe {
+.modal iframe {
     background-color: #FFF;
     border: none;
+}
+
+.modal a.registro {
+    background-color: #2f802c;
+    border-radius: 3px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    outline: none;
+    /* width: 100px; */
 }
 
 a.button {
@@ -228,7 +245,22 @@ a.button {
 }
 
 footer {
+    align-items: center;
     color: #FFF;
     background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
     padding: 25px;
+}
+
+footer a.facebook {
+    margin: 0 25px;
+}
+
+footer a.facebook img {
+    max-width: 24px;
+}
+
+footer a.terminos {
+    color: #FFF;
 }

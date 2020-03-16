@@ -1,11 +1,25 @@
 const $ = (selector = '') => document.querySelector(selector)
 
 $('#closer').addEventListener('click', () => {
-    $('#modal').classList.toggle('hidden')
+    $('#modalRegister').classList.toggle('hidden')
 })
 
 $('#open').addEventListener('click', () => {
-    $('#modal').classList.toggle('hidden')
+    $('#modalRegister').classList.toggle('hidden')
+})
+
+
+$('#openCondiciones').addEventListener('click', () => {
+    $('#modalCondiciones').classList.toggle('hidden')
+})
+
+$('#closeCondiciones').addEventListener('click', () => {
+    $('#modalCondiciones').classList.toggle('hidden')
+})
+
+$('#openRegisterFromConditions').addEventListener('click', () => {
+    $('#modalRegister').classList.toggle('hidden')
+    $('#modalCondiciones').classList.toggle('hidden')
 })
 
 
