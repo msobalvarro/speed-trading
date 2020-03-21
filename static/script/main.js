@@ -5,7 +5,15 @@ $('#closer').addEventListener('click', () => {
 })
 
 $('#open').addEventListener('click', () => {
-    $('#modalRegister').classList.toggle('hidden')
+    $('#modalCondiciones').classList.toggle('hidden')
+})
+
+$('#openUpgrade').addEventListener('click', () => {
+    $('#modalUpgrade').classList.toggle('hidden')
+})
+
+$('#closerUpgrade').addEventListener('click', () => {
+    $('#modalUpgrade').classList.toggle('hidden')
 })
 
 
