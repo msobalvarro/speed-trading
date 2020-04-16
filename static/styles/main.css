@@ -92,10 +92,14 @@ header.banner h1 {
 }
 
 header.banner p {
-  margin-top: 25px;
+  margin: 25px 0;
   text-align: right;
   font-size: 1.3em;
   width: 50%;
+}
+
+header.banner .buttons a img {
+  max-width: 128px;
 }
 
 /* </Cover> */
