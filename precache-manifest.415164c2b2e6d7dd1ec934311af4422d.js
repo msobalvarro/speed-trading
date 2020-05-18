@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5433cc42f2ffaed281f2c714a2bbad9b",
+    "revision": "ea4f6b98896023669e41a839d337d811",
     "url": "/speed-trading/index.html"
   },
   {
-    "revision": "a9a528c1be694ac08135",
-    "url": "/speed-trading/static/css/main.7a37ae08.chunk.css"
+    "revision": "044478e2b50ecfa48388",
+    "url": "/speed-trading/static/css/main.18edcc39.chunk.css"
   },
   {
     "revision": "793df9fae9d94bb0e030",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/speed-trading/static/js/2.82d0789e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9a528c1be694ac08135",
-    "url": "/speed-trading/static/js/main.9a4f21e9.chunk.js"
+    "revision": "044478e2b50ecfa48388",
+    "url": "/speed-trading/static/js/main.7f7eca16.chunk.js"
   },
   {
     "revision": "c6ab341be5d812d544b0",

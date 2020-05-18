@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/speed-trading/precache-manifest.38625ff9f01f1973ef74f59690cd9fb9.js"
+  "/speed-trading/precache-manifest.415164c2b2e6d7dd1ec934311af4422d.js"
 );
 
 self.addEventListener('message', (event) => {
