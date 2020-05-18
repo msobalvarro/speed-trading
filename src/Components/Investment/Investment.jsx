@@ -18,7 +18,7 @@ const Plans = () => {
                 <div className="row">
                     <span className="number">1</span>
 
-                    <p>Regístrate a través de tu link de referido o desde tu app Speed tradings.</p>
+                    <p>Regístrate a través de link de referido o desde tu app Speed tradings.</p>
                 </div>
 
                 <div className="row">
@@ -56,7 +56,7 @@ const Refs = () => {
                 <h2>Bono por referir</h2>
 
                 <p className="text-info">
-                    SiSiendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y
+                    Siendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y
                     comisionar un 5% de su inversión directa, este bono te será enviado al momento de
                     confirmar por parte de Speed Tradings el depósito de la inversión de tu referido directo.
                 </p>
