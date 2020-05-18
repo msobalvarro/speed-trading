@@ -1,0 +1,20 @@
+@import "../../Styles/constants.scss";
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+    img {
+        max-width: 128px;
+    }
+
+    a.support {
+        background-color: $colorYellow;
+        color: $colorMain;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+    }
+}

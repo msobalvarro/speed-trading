@@ -1,0 +1,64 @@
+@import "../../Styles/constants.scss";
+
+.content-investment {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px 50px;
+
+
+    img {
+        max-width: 30%;
+        
+        .large {
+            max-width: 50% !important;
+        }
+    }
+
+    .info {
+        color: $colorYellow;
+
+        &.small {
+            width: 50%;
+        }
+
+
+        h2, h3 {
+            margin: 25px 0;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            span.number {
+                background-color: $colorYellow;
+                border-radius: 50%;
+                padding: 5px 10px;
+                color: $colorMain;
+            }
+
+            p {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+img.splash-cover {
+    width: 100%;
+}
+
+.payments {
+    color: $colorYellow;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+
+    h2, p {
+        margin: 15px 0;
+    }
+}

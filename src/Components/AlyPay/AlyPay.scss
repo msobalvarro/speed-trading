@@ -1,0 +1,16 @@
+.alypay {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    width: 100%;
+
+    img {
+        max-width: 512px;
+    }
+
+    p {
+        width: 50%;
+    }
+}
