@@ -10,13 +10,13 @@ const Navbar = () => {
             <img src={Logo} className="brand-logo" alt="logo"/>
 
             <div className="list">
-                <a href="#" className="item active">Inicio</a>
+                <a href="#info" className="item">Informacion</a>
 
-                <a href="#" className="item">Informacion</a>
+                <a href="#exchange" className="item">AlyExchange</a>
 
-                <a href="#" className="item">Tablero</a>
+                <a href="https://dashboard-speedtradings-bank.herokuapp.com" target="_bank" className="item">Dashboard</a>
 
-                <a href="#" className="item">Registrarme</a>
+                <a href="https://dashboard-speedtradings-bank.herokuapp.com/#/register" target="_bank" className="item">Registrarme</a>
             </div>
         </nav>
     )

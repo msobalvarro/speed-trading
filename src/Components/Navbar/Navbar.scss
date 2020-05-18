@@ -22,17 +22,7 @@ nav.navigaion-bar {
             transition: $transition;
             margin: 0 5px;
             text-decoration: none;
-            opacity: 0.5;
             padding: 8px;
-
-
-            &:hover {
-                opacity: 0.8;
-            }
-            
-            &.active {
-                opacity: 1;
-            }
         }
     }
 }

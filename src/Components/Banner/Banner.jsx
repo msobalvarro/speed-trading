@@ -7,7 +7,7 @@ import googlePlayImage from "../../Assets/google-play.png"
 
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner" id="info">
             <img src={dashboardImage} className="cover" alt="banner" />
 
             <div className="info">

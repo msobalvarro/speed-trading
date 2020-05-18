@@ -6,7 +6,7 @@ import ExchangeImage from '../../Assets/exchange.png'
 
 const Exchange = () => {
     return (
-        <div className="content-exchange">
+        <div className="content-exchange" id="exchange">
             <div className="info">
                 <h2>AlyExhange</h2>
 
