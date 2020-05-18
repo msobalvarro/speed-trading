@@ -7,12 +7,11 @@ import AlyImage from '../../Assets/alypay.png'
 const AlyPay = () => {
     return (
         <div className="alypay">
-            <img src={AlyImage} alt="AlyImage"/>
+            <img src={AlyImage} alt="AlyImage" />
 
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Id eius veniam suscipit recusandae provident debitis numquam adipisci, 
-                harum odit quibusdam? Labore explicabo quasi corrupti dignissimos doloremque qui in tenetur molestiae?
+                Es la pasarela de pago donde los usuarios podrán hacer transferencias
+                y pagos con criptomonedas a través de las aplicaciones de AlySystem.
             </p>
         </div>
     )

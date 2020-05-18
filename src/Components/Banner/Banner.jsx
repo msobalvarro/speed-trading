@@ -14,9 +14,9 @@ const Banner = () => {
                 <h1>¿Qué es Speed Tradings?</h1>
 
                 <p>
-                    Es tu plataforma descentralizada de inversión en criptomonedas donde obtendras 
+                    Es tu aplicación multiservicios de inversión y usabilidad en criptomonedas donde obtendrás 
                     una rentabilidad de lunes a viernes del 0.5% al 1% de tu capital de inversión, 
-                    asegurándote un rendimiento semanal de hasta un 5% hasta duplicar tu inversión.
+                    asegurándote un rendimiento semanal de hasta un 5% hasta duplicar tu inversión. 
                 </p>
 
                 <a className="button-google-play" href="#">

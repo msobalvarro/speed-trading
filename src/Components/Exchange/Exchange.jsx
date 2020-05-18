@@ -11,24 +11,15 @@ const Exchange = () => {
                 <h2>AlyExhange</h2>
 
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusamus necessitatibus unde quo quisquam, debitis eaque 
-                    rerum quasi sit ipsam similique nam earum. Distinctio eveniet 
-                    incidunt deserunt iste suscipit dolores magni.
+                    Es la plataforma de intercambios de criptomonedas de AlySystem.
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusamus necessitatibus unde quo quisquam, debitis eaque 
-                    rerum quasi sit ipsam similique nam earum. Distinctio eveniet 
-                    incidunt deserunt iste suscipit dolores magni.
+                    Puedes encontrar AlyExchange a través de la aplicación Speed Tradings.
                 </p>
 
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusamus necessitatibus unde quo quisquam, debitis eaque 
-                    rerum quasi sit ipsam similique nam earum. Distinctio eveniet 
-                    incidunt deserunt iste suscipit dolores magni.
+                    Como beneficio del Exchange, podrás intercambiar tus criptomonedas entre si.
                 </p>
             </div>
 

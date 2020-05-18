@@ -18,7 +18,7 @@ const Plans = () => {
                 <div className="row">
                     <span className="number">1</span>
 
-                    <p>Registrate atravez de tu link de referido o desde tu app Speed tradings.</p>
+                    <p>Regístrate a través de tu link de referido o desde tu app Speed tradings.</p>
                 </div>
 
                 <div className="row">
@@ -36,7 +36,7 @@ const Plans = () => {
                 <div className="row">
                     <span className="number">4</span>
 
-                    <p>Verifica tu correo electronico.</p>
+                    <p>Verifica tu correo electrónico.</p>
                 </div>
 
                 <div className="row">
@@ -76,7 +76,7 @@ const Refs = () => {
                     <span className="number">2</span>
 
                     <p>
-                        Tu referido debe agregar tu correo al momento de registrarse a Speed Tradings.
+                        Tu referido debe registrase con tu link de registro generado en el dashboard.
                     </p>
                 </div>
 
@@ -108,8 +108,8 @@ const Payments = () => {
             <h2>BENEFICIOS DE INVERTIR EN CRIPTOMONEDAS</h2>
 
             <p>
-                Al tener tu capital de inversión en criptodivisas obtendrás multiples beneficios, aprovechando los incrementos 
-                de valor por la oferta y demanda de la misma, hacer transacciones y/o transferencia con costos de comisiones mínimas, 
+                Al tener tu capital de inversión en criptodivisas obtendrás multiples beneficios, aprovechando los incrementos
+                de valor por la oferta y demanda de la misma, hacer transacciones y/o transferencia con costos de comisiones mínimas,
                 sumándote a miles de usuarios que hoy en día son parte de esta nueva era del dinero digital.
             </p>
         </div>
