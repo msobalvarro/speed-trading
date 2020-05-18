@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/speed-trading/static/css/main.7a37ae08.chunk.css",
+    "main.js": "/speed-trading/static/js/main.9a4f21e9.chunk.js",
+    "main.js.map": "/speed-trading/static/js/main.9a4f21e9.chunk.js.map",
+    "runtime-main.js": "/speed-trading/static/js/runtime-main.28a39e3a.js",
+    "runtime-main.js.map": "/speed-trading/static/js/runtime-main.28a39e3a.js.map",
+    "static/js/2.82d0789e.chunk.js": "/speed-trading/static/js/2.82d0789e.chunk.js",
+    "static/js/2.82d0789e.chunk.js.map": "/speed-trading/static/js/2.82d0789e.chunk.js.map",
+    "index.html": "/speed-trading/index.html",
+    "precache-manifest.38625ff9f01f1973ef74f59690cd9fb9.js": "/speed-trading/precache-manifest.38625ff9f01f1973ef74f59690cd9fb9.js",
+    "service-worker.js": "/speed-trading/service-worker.js",
+    "static/css/main.7a37ae08.chunk.css.map": "/speed-trading/static/css/main.7a37ae08.chunk.css.map",
+    "static/js/2.82d0789e.chunk.js.LICENSE.txt": "/speed-trading/static/js/2.82d0789e.chunk.js.LICENSE.txt",
+    "static/media/alypay.png": "/speed-trading/static/media/alypay.87df90d0.png",
+    "static/media/Banner.scss": "/speed-trading/static/media/banner-cover.4e779b6c.png",
+    "static/media/custom-plan.png": "/speed-trading/static/media/custom-plan.b2818639.png",
+    "static/media/dashboard.png": "/speed-trading/static/media/dashboard.d68b8442.png",
+    "static/media/exchange.png": "/speed-trading/static/media/exchange.a59915d3.png",
+    "static/media/logo.png": "/speed-trading/static/media/logo.a55e71ae.png",
+    "static/media/ref.png": "/speed-trading/static/media/ref.06bbc19a.png",
+    "static/media/splash.png": "/speed-trading/static/media/splash.bbd6a942.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28a39e3a.js",
+    "static/js/2.82d0789e.chunk.js",
+    "static/css/main.7a37ae08.chunk.css",
+    "static/js/main.9a4f21e9.chunk.js"
+  ]
+}
