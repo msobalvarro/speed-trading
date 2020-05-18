@@ -10,6 +10,19 @@ footer {
         max-width: 128px;
     }
 
+    .block {
+        display: flex;
+        align-items: center;
+
+        a.facebook {
+            margin-right: 25px;
+
+            img {
+                max-width: 32px;
+            }
+        }
+    }
+
     a.support {
         background-color: $colorYellow;
         color: $colorMain;
