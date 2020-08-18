@@ -19,7 +19,7 @@ const Banner = () => {
                     asegurándote un rendimiento semanal de hasta un 5% hasta duplicar tu inversión. 
                 </p>
 
-                <a className="button-google-play" href="#">
+                <a className="button-google-play" href="https://play.google.com/store/apps/details?id=com.speedtradingsapp">
                     <img src={googlePlayImage} alt="google-play"/>
                 </a>
             </div>

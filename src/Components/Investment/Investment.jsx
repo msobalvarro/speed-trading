@@ -102,8 +102,12 @@ const Payments = () => {
             <h2>Pagos de Inversiones</h2>
 
             <p>
-                Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada <b>NO se cobra comisión de retiro.</b>
+                Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada.
             </p>
+
+            {/* <p>
+
+            </p> */}
 
             <h2>BENEFICIOS DE INVERTIR EN CRIPTOMONEDAS</h2>
 
