@@ -5,6 +5,11 @@ $backgroundGradient: linear-gradient(
   rgba(9, 9, 121, 1) 52%,
   rgba(31, 116, 133, 1) 100%
 );
+$colorMainGradient: linear-gradient(
+  to bottom,
+  #202020 0%,
+  rgba(45, 45, 45, .5) 100%
+);
 $colorMain: #2d2d2d;
 $colorSecondary: #9ed3da;
 $colorYellow: #ffcb08;

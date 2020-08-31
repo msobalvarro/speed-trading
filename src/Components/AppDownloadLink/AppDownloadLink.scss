@@ -1,0 +1,27 @@
+@import "../../Styles/constants.scss";
+
+.DownloadLink {
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    padding: .6rem 1rem;
+    background-color: $colorYellow;
+    border-radius: 100px;
+    text-decoration: none;
+    color: $colorMain;
+    font-size: .85rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px -1px transparent;
+    transition: background-color .25s, box-shadow .25s;
+
+    &:hover {
+        background-color: darken($colorYellow, 8);
+        box-shadow: 0 0 10px -1px rgba($colorYellow, .5);
+    }
+
+    img {
+        width: 1rem;
+        object-fit: contain;
+        margin-right: 1rem;
+    }
+}

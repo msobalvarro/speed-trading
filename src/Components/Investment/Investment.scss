@@ -1,23 +1,56 @@
 @import "../../Styles/constants.scss";
 
 .content-investment {
+    position: relative;
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 25px 50px;
-
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    height: 100vh;
 
     img {
         max-width: 30%;
+        //box-shadow: 0 0 10px 0 rgba($colorSecondary, .25);
         
         .large {
             max-width: 50% !important;
         }
     }
 
+    .telephone-view {
+        position: relative;
+        width: 320px;
+        height: 480px;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            padding: 30px 50px;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .3s;
+
+            &.active { opacity: 1; }
+
+            //&.confirm-account { background-color: #161616; }
+
+            &.telephone {
+                padding: 0;
+                opacity: 1;
+                z-index: 1000;
+            }
+        }
+    }
+
     .info {
-        color: $colorYellow;
+        color: $colorSecondary;
 
         &.small {
             width: 50%;
@@ -25,24 +58,94 @@
 
 
         h2, h3 {
+            font-size: 2.25rem;
             margin: 25px 0;
+            width: fit-content;
+            padding: 1rem 0;
+            position: relative;
+            text-transform: uppercase;
+
+            span {
+                display: inline-block;
+                width: fit-content;
+
+                &:first-letter {
+                    color: darken($colorSecondary, 35);
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $colorSecondary;
+                transform: scaleX(.45);
+                transform-origin: left center;
+                transition: transform .2s;
+            }
+
+            &:hover {
+                &:before { transform: scaleX(1.05); }
+            }
         }
 
         .row {
+            color: #fff;
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            padding: .5rem 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            border-radius: 100px;
+            transform: translateX(0);
+            transition: background-color .25s, transform .25s;
+
+            &.active {
+                background-color: $colorSecondary;
+                transform: translateX(2rem);
+                font-weight: bold;
+
+                p {
+                    color: $colorMain;
+                }
+            }
 
             span.number {
-                background-color: $colorYellow;
+                color: $colorMain;
                 border-radius: 50%;
                 padding: 5px 10px;
-                color: $colorMain;
+                background-color: $colorSecondary;
             }
 
             p {
+                color: inherit;
                 margin-left: 10px;
+                transition: color .25s;
             }
+        }
+    }
+
+    .go-register {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        color: $colorMain;
+        font-size: .9rem;
+        font-weight: bold;
+        background-color: $colorYellow;
+        border-radius: 100px;
+        padding: .5rem 1rem;
+
+        svg {
+            margin-left: .5rem;
         }
     }
 }
@@ -60,5 +163,9 @@ img.splash-cover {
 
     h2, p {
         margin: 15px 0;
+
+        b {
+            text-transform: uppercase;
+        }
     }
 }

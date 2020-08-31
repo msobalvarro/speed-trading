@@ -19,7 +19,7 @@ const Exchange = () => {
                 </p>
 
                 <p>
-                    Como beneficio del Exchange, podrás intercambiar tus criptomonedas entre si.
+                    Como beneficio del Exchange, podrás comprar, intercambiar o vender tus criptomonedas a través de nuestra app.
                 </p>
             </div>
 

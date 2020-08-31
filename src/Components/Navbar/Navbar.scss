@@ -4,25 +4,40 @@ $backgroundHover: rgba(255, 255, 255, 0.2);
 $backgroundActive: rgba(255, 255, 255, 0.3);
 
 nav.navigaion-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     align-items: center;
-    // background-color: #000;
+    //background: $colorMainGradient;
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
 
     img.brand-logo {
-        max-height: 100px;
+        max-height: 4rem;
     }
 
     .list {
-        a.item {
-            animation: fadeInEffect 1s;
-            border-radius: 5px;
-            color: $colorYellow;
-            transition: $transition;
-            margin: 0 5px;
-            text-decoration: none;
-            padding: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a{
+            &.item {
+                animation: fadeInEffect 1s;
+                border-radius: 5px;
+                color: $colorYellow;
+                transition: $transition;
+                margin: 0 5px;
+                text-decoration: none;
+                padding: 8px;
+            }
+
+            &.button-google-play {
+                img {
+                    width: 7rem;
+                }
+            }
         }
     }
 }

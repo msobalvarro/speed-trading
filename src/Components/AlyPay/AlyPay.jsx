@@ -10,8 +10,8 @@ const AlyPay = () => {
             <img src={AlyImage} alt="AlyImage" />
 
             <p>
-                Es la pasarela de pago donde los usuarios podrán hacer transferencias
-                y pagos con criptomonedas a través de las aplicaciones de AlySystem.
+                AlyPay es el sistema de pago de AlySystem donde los usuarios podrán hacer transferencias
+                y pagos con criptomonedas en los comercios afiliados a nuestra app.
             </p>
         </div>
     )
