@@ -27,7 +27,7 @@ const Register = () => {
             }else {
                 setActiveItem(activeItem + 1)
             }
-        }, 5000)
+        }, 3000)
     }, [activeItem])
 
     return (
@@ -186,7 +186,7 @@ const Benefits = () => {
     useEffect(_ => {
         setTimeout(_ => {
             setActiveItem(activeItem===2 ? 1 : 2)
-        }, 10000)
+        }, 12000)
     }, [activeItem])
 
     return (
