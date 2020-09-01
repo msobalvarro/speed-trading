@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 4rem;
-    height: 100vh;
+    padding: 1em 4rem;
+    min-height: 100vh;
 
     img {
         max-width: 30%;
@@ -52,17 +52,13 @@
     .info {
         color: $colorSecondary;
 
-        &.small {
-            width: 50%;
-        }
-
-
         h2, h3 {
             font-size: 2.25rem;
-            margin: 25px 0;
+            margin: 0 0 2rem 0;
             width: fit-content;
             padding: 1rem 0;
             position: relative;
+            width: fit-content;
             text-transform: uppercase;
 
             span {
@@ -82,7 +78,7 @@
                 right: 0;
                 height: 3px;
                 width: 100%;
-                background-color: $colorSecondary;
+                background-color: currentColor;
                 transform: scaleX(.45);
                 transform-origin: left center;
                 transition: transform .2s;
@@ -133,9 +129,8 @@
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 1.5rem;
+        bottom: 3rem;
         left: 50%;
-        transform: translateX(-50%);
         text-decoration: none;
         color: $colorMain;
         font-size: .9rem;
@@ -143,29 +138,177 @@
         background-color: $colorYellow;
         border-radius: 100px;
         padding: .5rem 1rem;
+        transform: translateX(-50%);
+        box-shadow: 0 0 0 0 transparent;
+        transition: box-shadow .25s;
 
         svg {
             margin-left: .5rem;
+            transform: translate3d(0, 0, 0);
+            transition: transform .25s;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px -1px rgba($colorYellow, .5);
+
+            svg {
+                transform: translate3d(5px, 0, 0);
+            }
+        }
+    }
+
+    // Estilos para la sección de los planes de inversión
+    &.invertion-plans {
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+        min-height: fit-content;
+        background: linear-gradient(to left, rgba($colorMain, .5) 0%, rgba($colorMain, .5) 100%), url('../../Assets/splash.png') center;
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 10px;
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+        box-shadow: 0 0 10px -2px rgba(#fff, .15);
+
+        h2 {
+            color: $colorYellow;
+
+            span {
+                &:first-letter {
+                    color: darken($colorYellow, 10);
+                }
+            }
+        }
+
+        .coin-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .coin-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $colorYellow;
+                width: 10rem;
+                height: 12.5rem;
+                border-radius: 10px;
+                padding: 1rem;
+                margin: 2rem 0;
+
+                &:hover {
+                    img {
+                        animation: rotate-coin-item 2s infinite linear;
+                    }
+
+                    @keyframes rotate-coin-item {
+                        to { transform: rotate3d(0, 1, 0, -1turn); }
+                    }
+                }
+
+                img {
+                    display: block;
+                    width: 8rem;
+                    height: 8rem;
+                    max-width: 100%;
+                    object-fit: contain;
+                    margin-bottom: .5rem;
+                }
+
+                p{
+                    color: $colorMain;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &.reset {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        min-height: fit-content;
+    }
+}
+
+.sub-info {
+    width: 100%;
+    min-width: 100%;
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        min-width: 100%;
+        
+        .left, .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 45%;
+            padding: 1rem 0;
+
+            .row {
+                margin: 0;
+                padding: .5rem;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+
+        .left {
+            img {
+                margin: 1.5rem auto;
+                min-width: 50%;
+            }
         }
     }
 }
 
-img.splash-cover {
-    width: 100%;
+.payments {
+    align-items: flex-start;
 }
 
-.payments {
-    color: $colorYellow;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    padding: 25px;
-    width: 100%;
+.benefits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    min-height: 31rem;
+    height: fit-content;
 
-    h2, p {
-        margin: 15px 0;
+    h2 {
+        margin: 0 auto !important;
+        margin-bottom: 1.5rem !important;
+    }
 
-        b {
-            text-transform: uppercase;
+    h3 {
+        font-size: 1.5rem !important;
+        color: $colorSecondary;
+    }
+
+    .sub-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 25rem;
+        max-height: auto;
+        padding: 1rem 4rem;
+        opacity: 0;
+        transition: opacity .5s;
+
+        &.active {
+            opacity: 1;
         }
     }
 }

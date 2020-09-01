@@ -11,13 +11,13 @@ const Navbar = () => {
             <img src={Logo} className="brand-logo" alt="logo"/>
 
             <div className="list">
-                <a href="#info" className="item">Informacion</a>
-
                 <a href="#exchange" className="item">AlyExchange</a>
+
+                <a href="#benefits" className="item">Beneficios</a>
 
                 <a href="https://dashboard-speedtradings-bank.herokuapp.com" target="_bank" className="item">Dashboard</a>
 
-                <a href="#plan" className="item">Planes de inversión</a>
+                <a href="#plans" className="item">Planes de inversión</a>
                 
                 <a href="#register" className="item">Registrarme</a>
 

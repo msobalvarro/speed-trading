@@ -11,9 +11,13 @@ import telephone from '../../Assets/telephone.png'
 import customRef from '../../Assets/ref.png'
 import splashImage from '../../Assets/splash.png'
 
-const Plans = () => {
+import BitcoinLogo from '../../Assets/bitcoin.svg'
+import EthereumLogo from '../../Assets/ethereum.svg'
+
+// Vista de los pasos para registrarse
+const Register = () => {
     // Estado que almacena el valor del item activo
-    const [activeItem, setActiveItem] = useState(0)
+    const [activeItem, setActiveItem] = useState(1)
 
     // Realiza el cambio del item activo luego de 5 segundos
     useEffect(_ => {
@@ -74,75 +78,126 @@ const Plans = () => {
 
             <a href="https://dashboard-speedtradings-bank.herokuapp.com/#/register" target="_blank" className="go-register">
                 Registrarme en Speed Tradings
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" stroke="#2d2d2d" stroke-width="2px"/></svg>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 24 24"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" stroke="#2d2d2d" strokeWidth="2px"/></svg>
             </a>
         </div>
     )
 }
 
-const Refs = () => {
+
+// Vista de los planes de inversión disponible
+const Plans = () => {
     return (
-        <div className="content-investment">
-            <div className="info small">
-                <h2>Bono por referir</h2>
+        <div className="content-investment invertion-plans" id="plans">
+            <div className="info">
+                <h2>¡<span>Elige</span> tu plan de <span>ahorro</span>!</h2>
 
-                <p className="text-info">
-                    SiSiendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y
-                    comisionar un 5% de su inversión directa, este bono te será enviado al momento de
-                    confirmar por parte de Speed Tradings el depósito de la inversión de tu referido directo.
-                </p>
-
-                <h3>¿CÓMO GANAR EL BONO?</h3>
-
-
-                <div className="row">
-                    <span className="number">1</span>
-
-                    <p>
-                        Tienes que estar activo con tu plan en Speed Tradings.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <span className="number">2</span>
-
-                    <p>
-                        Tu referido debe registrase con tu link de registro generado en el dashboard.
-                    </p>
-                </div>
-
-                <div className="row">
-                    <span className="number">3</span>
-
-                    <p>
-                        Al confirmar Speed Tradings que tu referido realizó el pago de
-                        su plan te llegará un correo con el Hash confirmando el pago de
-                        comisión del 5% según el plan de inversión que tu referido eligió a la wallet que registraste.
-                    </p>
+                <div className="coin-container">
+                    <div className="coin-item">
+                        <img src={BitcoinLogo} alt=""/>
+                        <p>Bitcoin</p>
+                    </div>
+                    
+                    <div className="coin-item">
+                        <img src={EthereumLogo} alt=""/>
+                        <p>Ethereum</p>
+                    </div>
                 </div>
             </div>
-
-            <img src={customRef} className="large" alt="custom-ref" />
         </div>
     )
 }
 
-const Payments = () => {
+const Refs = ({className=''}) => {
     return (
-        <div className="payments">
-            <h2>Pagos de Inversiones</h2>
+        <div className={`content-investment reset sub-info ${className}`} >
+            <div className="info">
+                <div className="left">
+                    <h3>Bono por referir</h3>
 
-            <p>
-                Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada. <b>se debitará el FEE del minero en el envío.</b>
-            </p>
+                    <p className="text-info">
+                        Siendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y
+                        comisionar un 5% de su inversión directa.
+                    </p>
 
-            <h2>BENEFICIOS DE INVERTIR EN CRIPTOMONEDAS</h2>
+                    <img src={customRef} className="large" alt="custom-ref" />
+                </div>
 
-            <p>
-                Al tener tu capital de inversión en criptodivisas obtendrás multiples beneficios, aprovechando los incrementos
-                de valor por la oferta y demanda de la misma, hacer transacciones y/o transferencia con costos de comisiones mínimas,
-                sumándote a miles de usuarios que hoy en día son parte de esta nueva era del dinero digital.
-            </p>
+                <div className="right">
+                    <h3>¿CÓMO GANAR EL BONO?</h3>
+
+
+                    <div className="row">
+                        <span className="number">1</span>
+
+                        <p>Tienes que estar activo con tu plan en Speed Tradings.</p>
+                    </div>
+
+                    <div className="row">
+                        <span className="number">2</span>
+
+                        <p>Tu referido debe registrase con tu link de registro generado en el dashboard.</p>
+                    </div>
+
+                    <div className="row">
+                        <span className="number">3</span>
+
+                        <p>
+                            En el momento de que tu referido realice el pago de su plan te llegará un correo confirmando el pago de comisión del 5% según la inversión realizada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Payments = ({className=''}) => {
+    return (
+        <div className={`content-investment reset sub-info payments ${className}`}>
+            <div className="info">
+                <div className="left">
+                    <h3>Pagos de Inversiones</h3>
+
+                    <p>
+                        Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada. <b>se debitará el FEE del minero en el envío.</b>
+                    </p>
+                </div>
+
+                <div className="right">
+                    <h3>BENEFICIOS DE INVERTIR EN CRIPTOMONEDAS</h3>
+
+                    <p>
+                        Al tener tu capital de inversión en criptodivisas obtendrás multiples beneficios, aprovechando los incrementos
+                        de valor por la oferta y demanda de la misma, hacer transacciones y/o transferencia con costos de comisiones mínimas,
+                        sumándote a miles de usuarios que hoy en día son parte de esta nueva era del dinero digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+// Vista de de los beneficios de usar speed tradings
+const Benefits = () => {
+    // Estado para almacenar ela sub sección a mostrar
+    const [activeItem, setActiveItem] = useState(1)
+
+    useEffect(_ => {
+        setTimeout(_ => {
+            setActiveItem(activeItem===2 ? 1 : 2)
+        }, 10000)
+    }, [activeItem])
+
+    return (
+        <div className="content-investment benefits" id="benefits">
+            <div className="info">
+                <h2>¿Qué <span>Beneficios</span> obtienes al usar <span>Speed</span> <span>Tradings</span>?</h2>
+
+                <Refs className={activeItem===1 ? 'active' : ''}/>
+
+                <Payments className={activeItem===2 ? 'active' : ''}/>
+            </div>
         </div>
     )
 }
@@ -150,13 +205,11 @@ const Payments = () => {
 const Investment = () => {
     return (
         <Fragment>
+            <Register/>
+
             <Plans />
 
-            <img src={splashImage} className="splash-cover" alt="splash" />
-
-            <Refs />
-
-            <Payments />
+            <Benefits />
         </Fragment>
     )
 }
