@@ -49,7 +49,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
-        max-width: 50%;
+        max-width: 45%;
         text-align: right;
         animation: from-right .45s;
 
@@ -97,16 +97,22 @@
             margin: 25px 0;
             font-size: 1.35rem;
             text-align: right;
-            width: 80%;
+            width: 100%;
             line-height: 1.5;
 
             &.apps-links {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                min-width: 300px;
+                max-width: 460px;
 
                 .DownloadLink {
                     width: 50%;
+                    min-width: 220px;
+                    margin-right: .5rem;
+                    margin-bottom: .5rem;
                 }
             }
         }
@@ -114,6 +120,150 @@
         a.button-google-play {
             img {
                 max-width: 128px;
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        & {
+            flex-direction: column;
+            max-height: 100vh;
+            align-items: center;
+            padding: 1rem;
+
+            .info {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 1rem;
+
+                p {
+                    width: 100%;
+
+                    .DownloadLink {
+                        max-width: 45%;
+                    }
+                }
+            }
+
+            .cover {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-big) {
+        & {
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0 1rem;
+            padding-top: 8rem;
+
+            .info {
+                width: 80%;
+                max-width: 100%;
+                padding: 2rem;
+                align-items: center;
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 1.1rem;
+                    text-align: center;
+
+                    &.apps-links {
+                        min-width: 460px;
+                    }
+                }
+            }
+
+            img.cover {
+                left: 50%;
+                top: 80%;
+                width: 120px;
+                height: 180px;
+
+                &.speedbanner1 {
+                    &.animate {
+                        transform: translateY(-45%) translateX(calc(-50% -1.9rem));
+                    }
+                }
+
+                &.speedbanner2 {
+                    &.animate {
+                        transform: translateY(-38%) translateX(calc(-50% + 1.9rem));
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 960px) {
+        & {
+            padding: 0;
+
+            .info {
+                width: 70%;
+                max-width: 70%;
+                padding-right: 2rem;
+
+                p {
+                    max-width: 95%;
+
+                    &.apps-links {
+                        max-width: 400px;
+                    }
+                }
+            }
+
+            img.cover {
+                left: 2rem;
+                top: 60%;
+                width: 180px;
+                height: 270px;
+
+                &.speedbanner1 {
+                    &.animate {
+                        transform: translateY(-45%) translateX(-1.9rem);
+                    }
+                }
+
+                &.speedbanner2 {
+                    &.animate {
+                        transform: translateY(-38%) translateX(6rem);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 961px) and (max-width: 1024px) {
+        & {
+            padding: 2rem;
+
+            .info {
+                width: 60%;
+                max-width: 60%;
+            }
+
+            img.cover {
+                left: 4rem;
+                width: 240px;
+                height: 360px;
+
+                &.speedbanner1 {
+                    &.animate {
+                        transform: translateY(-45%) translateX(-1.25rem);
+                    }
+                }
+
+                &.speedbanner2 {
+                    &.animate {
+                        transform: translateY(-38%) translateX(9rem);
+                    }
+                }
             }
         }
     }
