@@ -6,6 +6,8 @@ import AlySystem from '../../Assets/alysystem.png'
 import AlyCoin from '../../Assets/AlyCoin.png'
 import AlyCoinLetters from '../../Assets/AlyCoin-letters.png'
 
+const urlPDF = "https://drive.google.com/file/d/13_2tfprMchj06zf5dfZVR-7VPkY0JGCj/view?usp=sharing"
+
 const Footer = () => {
     const [active, setActive] = useState(1)
 
@@ -39,15 +41,15 @@ const Footer = () => {
 
             <div className='support-container'>
                 <p className={active===1 ? 'active' : ''}>
-                    ¿Consultas? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                    ¿Consultas? <a href={urlPDF} target="_blank" download>ver más información</a>
                 </p>
 
                 <p className={active===2 ? 'active' : ''}>
-                    ¿Dudas? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                    ¿Dudas? <a href={urlPDF} target="_blank" download>ver más información</a>
                 </p>
 
                 <p className={active===3 ? 'active' : ''}>
-                    ¿Inquietudes? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                    ¿Inquietudes? <a href={urlPDF} target="_blank" download>ver más información</a>
                 </p>
 
                 <a target="_blank" className="support" href="mailto:tradingspeed4@gmail.com?subject=Soporte">
