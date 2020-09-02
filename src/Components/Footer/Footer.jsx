@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react'
 import './Footer.scss'
 import AlySystem from '../../Assets/alysystem.png'
 import AlyCoin from '../../Assets/AlyCoin.png'
+import AlyCoinLetters from '../../Assets/AlyCoin-letters.png'
 
 const Footer = () => {
     const [active, setActive] = useState(1)
@@ -37,9 +38,17 @@ const Footer = () => {
             </div>
 
             <div className='support-container'>
-                <p className={active===1 ? 'active' : ''}>¿Consultas?</p>
-                <p className={active===2 ? 'active' : ''}>¿Dudas?</p>
-                <p className={active===3 ? 'active' : ''}>¿Inquietudes?</p>
+                <p className={active===1 ? 'active' : ''}>
+                    ¿Consultas? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                </p>
+
+                <p className={active===2 ? 'active' : ''}>
+                    ¿Dudas? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                </p>
+
+                <p className={active===3 ? 'active' : ''}>
+                    ¿Inquietudes? <a href="./SpeedTrading.pdf" download>ver más información</a>
+                </p>
 
                 <a target="_blank" className="support" href="mailto:tradingspeed4@gmail.com?subject=Soporte">
                     <span className='social-icon email'></span>
@@ -48,7 +57,10 @@ const Footer = () => {
             </div>
 
             <div className="logos">
-                <div className="alycoin"><img src={AlyCoin} alt="alycoin" /></div>
+                <div className="alycoin">
+                    <img src={AlyCoin} alt="alycoin" className="logo" />
+                    <img src={AlyCoinLetters} alt="alycoin" className="letters" />
+                </div>
                 <img src={AlySystem} alt="alysystem" className="alysystem" />
             </div>
 

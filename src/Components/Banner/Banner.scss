@@ -1,21 +1,45 @@
 @import "../../Styles/constants.scss";
 
 .banner {
+    position: relative;
     align-items: center;
     background-attachment: scroll;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 2rem 4rem;
     width: 100%;
     height: 100vh;
 
     img.cover {
-        width: 45%;
+        position: absolute;
+        left: 17%;
+        top: 50%;
+        width: 320px;
+        height: 480px;
         border-radius: 5px;
         overflow: hidden;
-        &.animate {
-            animation: from-left .45s;
+        opacity: 0;
+        transition: transform 1s, opacity .25s;
+
+        &.speedbanner1.animate, &.speedbanner2.animate {
+            opacity: 1;
+        }
+
+        &.speedbanner1 {
+            transform: translateY(-200%) translateX(-7rem);
+
+            &.animate {
+                transform: translateY(-45%) translateX(-7rem);
+            }
+        }
+
+        &.speedbanner2 {
+            transform: translateY(200%) translateX(7rem);
+
+            &.animate {
+                transform: translateY(-38%) translateX(7rem);
+            }
         }
     }
 

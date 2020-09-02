@@ -10,9 +10,9 @@ const Navbar = () => {
             <img src={Logo} className="brand-logo" alt="logo"/>
 
             <div className="list">
-                <a href="#alypay" className="item">AlyPay</a>
-
                 <a href="#exchange" className="item">AlyExchange</a>
+
+                <a href="#alypay" className="item">AlyPay</a>
 
                 <a href="#benefits" className="item">Beneficios</a>
 

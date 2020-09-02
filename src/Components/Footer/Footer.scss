@@ -20,16 +20,34 @@ footer {
         height: 4rem;
         padding: .6rem;
         z-index: 10000;
+        transform: translateY(-.5rem);
 
-        img {
+        .logo {
             width: 100%;
             height: 100%;
             object-fit: contain;
             animation: rotate-alycoin 4s infinite linear;
 
             @keyframes rotate-alycoin {
-                to { transform: rotateY(1turn); }
+                0 {
+                transform: rotateY(0);
+              }
+              50% {
+                transform: rotateY(180deg);
+              }
+              100% {
+                transform: rotateY(0deg);
+              }
             }
+        }
+
+        .letters {
+            position: absolute;
+            bottom: -1.5rem;
+            left: 50%;
+            width: 4.5rem;
+            transform: translateX(-50%);
+            margin: 0 auto;
         }
 
         &:after {
@@ -96,17 +114,25 @@ footer {
 
     .support-container {
         position: relative;
-        width: 13rem;
+        width: 18rem;
         padding-top: 1.75rem;
 
         p {
             position: absolute;
             top: 0;
             left: 0;
-            font-size: 1.15rem;
+            font-size: 1rem;
             padding: .05rem .5rem;
             opacity: 0;
             transition: opacity .35s;
+
+            a {
+                font-weight: normal;
+                text-decoration-style: dashed;
+                font-size: .85rem;
+                color: lighten($colorMain, 5);
+                padding-left: .5rem;
+            }
 
             &.active {
                 opacity: 1;
@@ -122,6 +148,7 @@ footer {
         background-color: $colorMain;
         font-weight: normal;
         border-radius: 7px;
+        width: 18rem;
         padding: .5rem;
         padding-right: 1rem;
         text-decoration: none;

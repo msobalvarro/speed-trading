@@ -2,24 +2,32 @@ import React, {useEffect, useState, useRef} from 'react'
 
 // Import Assets and styles
 import './Banner.scss'
-import dashboardImage from "../../Assets/Speed.png"
+import SpeedBanner1 from '../../Assets/speed-banner-1.png'
+import SpeedBanner2 from '../../Assets/speed-banner-2.png'
 
 // Import Components
 import { AndroidLink, IosLink } from "../AppDownloadLink/AppDownloadLink"
 
 const Banner = () => {
     const [loadedImg, setLoadedImg] = useState(false)
-    const coverImg = useRef(null)
+    const [loadedImg2, setLoadedImg2] = useState(false)
+    const speedBanner1Ref = useRef(null)
+    const speedBanner2Ref = useRef(null)
 
     useEffect(_ => {
-        coverImg.current.addEventListener('load', _ => {
+        speedBanner1Ref.current.addEventListener('load', _ => {
             setLoadedImg(true)
+        })
+
+        speedBanner1Ref.current.addEventListener('load', _ => {
+            setLoadedImg2(true)
         })
     }, [])
 
     return (
         <div className="banner" id="info" data-animate="false">
-            <img ref={coverImg} src={dashboardImage} className={`cover ${loadedImg ? 'animate' : ''}`} alt="banner" />
+            <img ref={speedBanner1Ref} src={SpeedBanner1} className={`cover speedbanner1 ${loadedImg ? 'animate' : ''}`} alt="banner" />
+            <img ref={speedBanner2Ref} src={SpeedBanner2} className={`cover speedbanner2  ${loadedImg2 ? 'animate' : ''}`} alt="banner" />
 
             <div className="info">
                 <h1>¿<span className="q">Q</span>ué es <span>Speed</span> <span>Tradings</span>?</h1>
