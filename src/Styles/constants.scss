@@ -28,3 +28,23 @@ $animationShadow: rgba(250, 250, 250, 0.3) 0px 0px 0px 3px;
     opacity: 1;
   }
 }
+
+@keyframes from-right {
+    from { transform: translateX(100%); }
+}
+
+@keyframes from-left {
+    from { transform: translateX(-100%); }
+}
+
+@keyframes from-top {
+    from { transform: translateY(-100%); }
+}
+
+@keyframes from-bottom {
+    from { transform: translateY(100%); }
+}
+
+@keyframes from-scale-0 {
+    from { transform: scale(0); }
+}

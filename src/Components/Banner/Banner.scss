@@ -14,6 +14,9 @@
         width: 45%;
         border-radius: 5px;
         overflow: hidden;
+        &.animate {
+            animation: from-left .45s;
+        }
     }
 
 
@@ -24,6 +27,7 @@
         justify-content: center;
         max-width: 50%;
         text-align: right;
+        animation: from-right .45s;
 
         h1 {
             position: relative;

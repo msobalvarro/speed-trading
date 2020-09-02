@@ -9,7 +9,6 @@ import confirmAccout from '../../Assets/confirm-account.png'
 import dashboardApp  from '../../Assets/dashboard-app.png'
 import telephone from '../../Assets/telephone.png'
 import customRef from '../../Assets/ref.png'
-import splashImage from '../../Assets/splash.png'
 
 import BitcoinLogo from '../../Assets/bitcoin.svg'
 import EthereumLogo from '../../Assets/ethereum.svg'
@@ -31,8 +30,8 @@ const Register = () => {
     }, [activeItem])
 
     return (
-        <div className="content-investment" id="register">
-            <div className="info">
+        <div className={`content-investment`} id="register" data-animate="false">
+            <div className="info from-left">
                 <h2>¿Cómo ser parte de <span>Speed</span> <span>Tradings</span>?</h2>
 
 
@@ -67,7 +66,7 @@ const Register = () => {
                 </div>
             </div>
 
-            <div className="telephone-view">
+            <div className="telephone-view from-scale-0">
                 <img src={telephone} alt="" className="telephone"/>
                 <img src={loginApp} alt="" className={`login-app ${activeItem===1 ? 'active' : ''}`}/>
                 <img src={basicInfo} alt="" className={`basic-info ${activeItem===2 ? 'active' : ''}`}/>
@@ -76,7 +75,7 @@ const Register = () => {
                 <img src={dashboardApp} alt="" className={`dashboard-app ${activeItem===5 ? 'active' : ''}`}/>
             </div>
 
-            <a href="https://dashboard-speedtradings-bank.herokuapp.com/#/register" target="_blank" className="go-register">
+            <a href="https://dashboard-speedtradings-bank.herokuapp.com/#/register" target="_blank" rel="noopener noreferrer" className="go-register">
                 Registrarme en Speed Tradings
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 24 24"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" stroke="#2d2d2d" strokeWidth="2px"/></svg>
             </a>
@@ -190,7 +189,7 @@ const Benefits = () => {
     }, [activeItem])
 
     return (
-        <div className="content-investment benefits" id="benefits">
+        <div className="content-investment benefits" id="benefits" data-animate="false">
             <div className="info">
                 <h2>¿Qué <span>Beneficios</span> obtienes al usar <span>Speed</span> <span>Tradings</span>?</h2>
 

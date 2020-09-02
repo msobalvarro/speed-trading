@@ -12,7 +12,7 @@ const AppsLinks = {
 
 const AndroidLink = () => {
     return (
-        <a href={AppsLinks.playstore} target="_blank" className="DownloadLink">
+        <a href={AppsLinks.playstore} target="_blank" rel="noopener noreferrer" className="DownloadLink">
             <img src={AndroidIcon} alt=""/>
             Obtener para Android
         </a>

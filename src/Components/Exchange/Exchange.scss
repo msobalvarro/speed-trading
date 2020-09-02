@@ -3,26 +3,44 @@
 .content-exchange {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 25px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 3rem 4rem;
+    margin: 1.5rem 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .info, img {
+        transition: transform 1s;
+    }
 
     .info {
-        width: 40%;
+        width: 50%;
+        transform: translateX(120%);
 
         h2 {
             color: $colorYellow;
             margin-bottom: 15px;
+            font-size: 2.25rem;
         }
 
         p {
+            width: 100%;
             margin-bottom: 15px;
-
-            font-size: 1.8em;
+            font-size: 1.35rem;
+            line-height: 1.5;
         }
     }
 
     img {
-        width: 30%;
+        width: 320px;
+        height: 480px;
+        object-fit: contain;
+        transform: scale(0);
+    }
+
+    &[data-animate="true"] {
+        .info { transform: translateX(0); }
+        img { transform: scale(1); }
     }
 }

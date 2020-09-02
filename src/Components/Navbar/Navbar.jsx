@@ -3,7 +3,6 @@ import React from 'react'
 // Import styles and assets
 import './Navbar.scss'
 import Logo from "../../Assets/logo.png"
-import googlePlayImage from "../../Assets/google-play.png"
 
 const Navbar = () => {
     return (
@@ -11,6 +10,8 @@ const Navbar = () => {
             <img src={Logo} className="brand-logo" alt="logo"/>
 
             <div className="list">
+                <a href="#alypay" className="item">AlyPay</a>
+
                 <a href="#exchange" className="item">AlyExchange</a>
 
                 <a href="#benefits" className="item">Beneficios</a>

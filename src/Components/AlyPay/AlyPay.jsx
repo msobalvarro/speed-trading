@@ -1,18 +1,46 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 // Import Assets and styles
 import './AlyPay.scss'
 import AlyImage from '../../Assets/alypay.png'
+import Alypay1 from '../../Assets/alypay1.png'
+import Alypay2 from '../../Assets/alypay2.png'
+import Alypay3 from '../../Assets/alypay3.png'
+import Alypay4 from '../../Assets/alypay4.png'
+import telephone from '../../Assets/telephone.png'
 
 const AlyPay = () => {
-    return (
-        <div className="alypay">
-            <img src={AlyImage} alt="AlyImage" />
+    const [activeItem, setActiveItem] = useState(1);
 
-            <p>
-                AlyPay es el sistema de pago de AlySystem donde los usuarios podrán hacer transferencias
-                y pagos con criptomonedas en los comercios afiliados a nuestra app.
-            </p>
+    // Realiza el cambio del item activo luego de 5 segundos
+    useEffect(_ => {
+        setTimeout(_ => {
+            if(activeItem === 4) {
+                setActiveItem(1)
+            }else {
+                setActiveItem(activeItem + 1)
+            }
+        }, 3000)
+    }, [activeItem])
+
+    return (
+        <div className="alypay" id="alypay" data-animate="false">
+            <div className="info">
+                <img src={AlyImage} alt="AlyImage" />
+
+                <p>
+                    AlyPay es el sistema de pago de AlySystem donde los usuarios podrán hacer transferencias
+                    y pagos con criptomonedas en los comercios afiliados a nuestra app.
+                </p>
+            </div>
+
+            <div className="telephone-view">
+                <img src={telephone} alt="" className="telephone"/>
+                <img src={Alypay1} alt="" className={`${activeItem===1 ? 'active' : ''}`}/>
+                <img src={Alypay2} alt="" className={`${activeItem===2 ? 'active' : ''}`}/>
+                <img src={Alypay3} alt="" className={`${activeItem===3 ? 'active' : ''}`}/>
+                <img src={Alypay4} alt="" className={`${activeItem===4 ? 'active' : ''}`}/>
+            </div>
         </div>
     )
 }
