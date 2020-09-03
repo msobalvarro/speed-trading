@@ -3,10 +3,11 @@ import React, {useState, useEffect} from 'react'
 // Import Assets and styles
 import './AlyPay.scss'
 import AlyImage from '../../Assets/alypay.png'
-import Alypay1 from '../../Assets/alypay1.png'
-import Alypay2 from '../../Assets/alypay2.png'
-import Alypay3 from '../../Assets/alypay3.png'
-import Alypay4 from '../../Assets/alypay4.jpg'
+import Alypay1 from '../../Assets/alypay1.jpeg'
+import Alypay2 from '../../Assets/alypay2.jpeg'
+import Alypay3 from '../../Assets/alypay3.jpeg'
+import Alypay4 from '../../Assets/alypay4.jpeg'
+import Alypay5 from '../../Assets/alypay5.jpeg'
 import telephone from '../../Assets/telephone.png'
 
 const AlyPay = () => {
@@ -15,7 +16,7 @@ const AlyPay = () => {
     // Realiza el cambio del item activo luego de 5 segundos
     useEffect(_ => {
         setTimeout(_ => {
-            if(activeItem === 4) {
+            if(activeItem === 5) {
                 setActiveItem(1)
             }else {
                 setActiveItem(activeItem + 1)
@@ -40,6 +41,7 @@ const AlyPay = () => {
                 <img src={Alypay2} alt="" className={`${activeItem===2 ? 'active' : ''}`}/>
                 <img src={Alypay3} alt="" className={`${activeItem===3 ? 'active' : ''}`}/>
                 <img src={Alypay4} alt="" className={`${activeItem===4 ? 'active' : ''}`}/>
+                <img src={Alypay5} alt="" className={`${activeItem===5 ? 'active' : ''}`}/>
             </div>
         </div>
     )
