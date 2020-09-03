@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 // Import Styles and asset
 import './Exchange.scss'
+import AlyExchangeImage from '../../Assets/alyexchange.png'
 import telephone from '../../Assets/telephone.png'
 import ExchangeImage from '../../Assets/exchange.png'
 import ExchangeImage2 from '../../Assets/exchange2.jpg'
@@ -24,7 +25,7 @@ const Exchange = () => {
     return (
         <div className="content-exchange" id="exchange" data-animate="false">
             <div className="info">
-                <h2>AlyExhange</h2>
+                <img src={AlyExchangeImage} alt="AlyExchange" className="alyexchange" />
 
                 <p>
                     Es la plataforma de intercambios de criptomonedas de AlySystem. Puedes encontrar AlyExchange a través de la aplicación Speed Tradings. Como beneficio del Exchange, podrás comprar, intercambiar o vender tus criptomonedas a través de nuestra app.

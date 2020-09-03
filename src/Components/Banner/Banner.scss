@@ -61,6 +61,7 @@
             margin-bottom: 1rem;
             text-transform: uppercase;
             font-size: 2.25rem;
+            word-wrap: break-word;
             width: auto !important;
 
             span {
@@ -105,7 +106,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: flex-end;
-                min-width: 300px;
+                min-width: 250px;
                 max-width: 460px;
 
                 .DownloadLink {
@@ -124,10 +125,40 @@
         }
     }
 
+    @media (max-width: 459px) {
+        & {
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            .info {
+                min-width: 100%;
+                h1 {
+                    width: 100%;
+                    font-size: 1.3rem !important;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 1rem !important;
+                }
+            }
+
+            .apps-links {
+                flex-direction: column !important;
+                align-items: center;
+
+                .DownloadLink {
+                    margin-bottom: .75rem !important;
+                }
+            }
+        }
+    }
+
     @media (max-width: $mobile) {
         & {
             flex-direction: column;
-            max-height: 100vh;
+            min-height: 480px !important;
+            max-height: 480px !important;
             align-items: center;
             padding: 1rem;
 
@@ -157,6 +188,8 @@
             justify-content: flex-start;
             padding: 0 1rem;
             padding-top: 8rem;
+            min-height: 680px;
+            max-height: 680px;
 
             .info {
                 width: 80%;
@@ -203,6 +236,8 @@
     @media (min-width: 769px) and (max-width: 960px) {
         & {
             padding: 0;
+            margin-top: 4rem;
+            max-height: 680px;
 
             .info {
                 width: 70%;
@@ -242,9 +277,10 @@
     @media (min-width: 961px) and (max-width: 1024px) {
         & {
             padding: 2rem;
+            max-height: 680px;
 
             .info {
-                width: 60%;
+                width: 55%;
                 max-width: 60%;
             }
 
@@ -270,25 +306,38 @@
 
     @media (min-width: 1025px) {
         & {
+            min-height: 680px;
+            max-height: 720px;
+
             .info {
-                width: 50%;
-                max-width: 50%;
+                width: 55%;
+                max-width: 55%;
+
+                h1 { font-size: 2rem; }
+                p { 
+                    width: 85%;
+                }
+
+                .apps-links {
+                    width: 100%;
+                    transform: translateX(2rem);
+                }
             }
 
             img.cover {
                 left: 1rem;
 
-            &.speedbanner1 {
-                &.animate {
-                    transform: translateY(-45%) translateX(0);
+                &.speedbanner1 {
+                    &.animate {
+                        transform: translateY(-45%) translateX(0);
+                    }
                 }
-            }
 
-            &.speedbanner2 {
-                &.animate {
-                    transform: translateY(-38%) translateX(13.5rem);
+                &.speedbanner2 {
+                    &.animate {
+                        transform: translateY(-38%) translateX(13.5rem);
+                    }
                 }
-            }
             }
         }
     }

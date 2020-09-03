@@ -13,14 +13,15 @@ nav.navigaion-bar {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
+    padding-top: 1rem;
     z-index: 10000;
 
-    @media (max-width: $tablet-big) {
-        flex-direction: column;
+    img.brand-logo {
+        max-height: 5rem;
     }
 
-    img.brand-logo {
-        max-height: 4rem;
+    .menu, .close {
+        display: none;
     }
 
     .list {
@@ -44,15 +45,52 @@ nav.navigaion-bar {
                 }
             }
         }
+    }
 
-        @media (max-width: $tablet-small) {
-            & {
-                flex-wrap: wrap;
+    @media (max-width: $tablet-big) {
+        & {
+            flex-direction: row;
+            .menu, .close {
+                display: initial;
+            }
+
+            .list {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: fixed;
                 justify-content: center;
+                background-color: rgba($colorMain, .9);
+                flex-direction: column;
+                font-size: 1.25rem;
+                transform: translateX(-100%);
+                z-index: 10000;
 
                 .item {
-                    min-width: 4rem;
+                    margin-bottom: .75rem;
                 }
+
+                .close {
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                }
+            }
+
+            .list.active {
+                transform: translateX(0);
+                transition: transform .35s;
+            }
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 960px) {
+        & {
+            flex-direction: column;
+
+            .list {
+                margin-top: .5rem;
             }
         }
     }

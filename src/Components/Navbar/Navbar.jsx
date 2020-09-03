@@ -1,15 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 // Import styles and assets
 import './Navbar.scss'
 import Logo from "../../Assets/alysystem.png"
+import Menu from "../../Assets/menu.svg"
+import Close from "../../Assets/close.svg"
 
 const Navbar = () => {
+    const [showNavbar, setShowNavbar] = useState(false)
+
     return (
         <nav className="navigaion-bar">
             <img src={Logo} className="brand-logo" alt="logo"/>
+            <img src={Menu} onClick={_ => setShowNavbar(true)} className="menu" alt="menu"/>
 
-            <div className="list">
+            <div className={`list ${showNavbar ? 'active' : ''}`}>
                 <a href="#exchange" className="item">AlyExchange</a>
 
                 <a href="#alypay" className="item">AlyPay</a>
@@ -22,9 +27,7 @@ const Navbar = () => {
                 
                 <a href="#register" className="item">Registrarme</a>
 
-                {/*<a className="item button-google-play" href="https://play.google.com/store/apps/details?id=com.speedtradingsapp" target="_blank">
-                    <img src={googlePlayImage} alt="google-play"/>
-                </a>*/}
+                <img src={Close} onClick={_ => setShowNavbar(false)} className="close" alt="close"/>
             </div>
         </nav>
     )

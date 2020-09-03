@@ -30,7 +30,7 @@ const Banner = () => {
             <img ref={speedBanner2Ref} src={SpeedBanner2} className={`cover speedbanner2  ${loadedImg2 ? 'animate' : ''}`} alt="banner" />
 
             <div className="info">
-                <h1>¿<span className="q">Q</span>ué es <span>Speed</span> <span>Tradings</span>?</h1>
+                <h1>¿Qué es <span>Speed</span> <span>Tradings?</span></h1>
 
                 <p>
                     Es tu aplicación multiservicios de inversión y usabilidad en criptomonedas de AlySystem.
