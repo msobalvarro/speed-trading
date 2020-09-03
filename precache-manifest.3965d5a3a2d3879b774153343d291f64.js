@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e3590b13c1093f9c0e6bfa6184be8e0",
+    "revision": "be2cb1949745a12acbab641db0caecce",
     "url": "/index.html"
   },
   {
-    "revision": "e0bed8f79d3c8355e6d2",
-    "url": "/static/css/main.89c9fee5.chunk.css"
+    "revision": "0eaea9917b8403b784ac",
+    "url": "/static/css/main.c8fffaba.chunk.css"
   },
   {
-    "revision": "85ec19952a3e03d104a6",
-    "url": "/static/js/2.230c9518.chunk.js"
+    "revision": "9970ff0e7518f7166add",
+    "url": "/static/js/2.1ed422e8.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.230c9518.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.1ed422e8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e0bed8f79d3c8355e6d2",
-    "url": "/static/js/main.9bdd855e.chunk.js"
+    "revision": "0eaea9917b8403b784ac",
+    "url": "/static/js/main.183d172e.chunk.js"
   },
   {
     "revision": "f9a9434917695bd734d2",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bitcoin.38c34a1b.svg"
   },
   {
+    "revision": "adae651ddbf19d1b845466ce859640a1",
+    "url": "/static/media/close.adae651d.svg"
+  },
+  {
     "revision": "579accca15ba0f01c0b994a8c385906d",
     "url": "/static/media/custom-plan.579accca.png"
   },
@@ -76,20 +80,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ethereum.802c6eac.svg"
   },
   {
-    "revision": "c00be73a61acd3041984be108c2f8fbe",
-    "url": "/static/media/exchange.c00be73a.png"
+    "revision": "c41cc49221153a1e8b14aaf8a7ec0d22",
+    "url": "/static/media/exchange.c41cc492.jpeg"
   },
   {
-    "revision": "dff245d05ee2c9e515e45ecc5a9ca0af",
-    "url": "/static/media/exchange2.dff245d0.jpg"
+    "revision": "7c1b8f2b15b1acad707a9a0c9638bfc3",
+    "url": "/static/media/exchange2.7c1b8f2b.jpeg"
   },
   {
-    "revision": "e601578b94d2ae21497abeecd5da57e1",
-    "url": "/static/media/exchange3.e601578b.jpg"
+    "revision": "114ec3e93f048a5a39a449db206d7896",
+    "url": "/static/media/exchange3.114ec3e9.jpeg"
+  },
+  {
+    "revision": "c0a81ee4c386e61c42b1e0e7f55ea8ba",
+    "url": "/static/media/exchange4.c0a81ee4.jpeg"
   },
   {
     "revision": "6898ed30bcbcc310b9b4985a177eecf2",
     "url": "/static/media/login-app.6898ed30.png"
+  },
+  {
+    "revision": "361b738515b8627dc70ad8cd2234182c",
+    "url": "/static/media/menu.361b7385.svg"
   },
   {
     "revision": "4524696dd32407657869f2c338b40335",
