@@ -6,7 +6,7 @@ import AlyImage from '../../Assets/alypay.png'
 import Alypay1 from '../../Assets/alypay1.png'
 import Alypay2 from '../../Assets/alypay2.png'
 import Alypay3 from '../../Assets/alypay3.png'
-import Alypay4 from '../../Assets/alypay4.png'
+import Alypay4 from '../../Assets/alypay4.jpg'
 import telephone from '../../Assets/telephone.png'
 
 const AlyPay = () => {

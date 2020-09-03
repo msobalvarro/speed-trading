@@ -2,7 +2,7 @@ import React from 'react'
 
 // Import styles and assets
 import './Navbar.scss'
-import Logo from "../../Assets/logo.png"
+import Logo from "../../Assets/alysystem.png"
 
 const Navbar = () => {
     return (

@@ -1,7 +1,9 @@
+@import "../../Styles/constants.scss";
+
 .alypay {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 25px;
     width: 100%;
@@ -68,6 +70,59 @@
                 padding: 0;
                 opacity: 1;
                 z-index: 1000;
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        & {
+            p {
+                font-size: 1rem !important;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-small) {
+        & {
+            flex-direction: column;
+            padding: 1rem 0;
+
+            .info {
+                width: 100%;
+                padding: 1rem 2rem;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 621px) and (max-width: $desktop) {
+        & {
+            padding: 2rem 0;
+
+            .info {
+                min-width: 60%;
+                padding: 0 1rem;
+
+                h2, h3, p {
+                    text-align: left;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .telephone-view {
+                width: 200px;
+                margin-right: 1rem;
+
+                img {
+                    padding: 10px 15px;
+                }
             }
         }
     }

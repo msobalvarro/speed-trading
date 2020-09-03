@@ -17,16 +17,8 @@ code {
     monospace;
 }
 
-body {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    238deg,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(25, 24, 24, 1) 50%,
-    rgba(21, 61, 70, 1) 120%
-  );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body, html {
+  position: relative;
   color: #fff;
   font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
@@ -35,4 +27,28 @@ body {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      238deg,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(25, 24, 24, 1) 50%,
+      rgba(21, 61, 70, 1) 120%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1000;
+  }
+
+  @media (max-width: $mobile) {
+    & {
+      max-width: $mobile;
+    }
+  }
 }

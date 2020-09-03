@@ -267,4 +267,29 @@
             }
         }
     }
+
+    @media (min-width: 1025px) {
+        & {
+            .info {
+                width: 50%;
+                max-width: 50%;
+            }
+
+            img.cover {
+                left: 1rem;
+
+            &.speedbanner1 {
+                &.animate {
+                    transform: translateY(-45%) translateX(0);
+                }
+            }
+
+            &.speedbanner2 {
+                &.animate {
+                    transform: translateY(-38%) translateX(13.5rem);
+                }
+            }
+            }
+        }
+    }
 }

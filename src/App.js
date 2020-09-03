@@ -13,12 +13,10 @@ function checkIntersection(){
     let observer;
 
     const observerCallback = (entries, observer) => {
-        entries.forEach(entry => { console.log(entry.isIntersecting)
+        entries.forEach(entry => {
             if(entry.isIntersecting) {
                 entry.target.setAttribute('data-animate', 'true')
                 observer.unobserve(entry.target)
-            } else {
-                //callback(false)
             }
         })
     }

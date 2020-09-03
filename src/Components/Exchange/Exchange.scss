@@ -10,7 +10,7 @@
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
 
-    .info, img {
+    .info, .telephone-view {
         transition: transform 1s;
     }
 
@@ -32,15 +32,96 @@
         }
     }
 
-    img {
+    .telephone-view {
+        position: relative;
         width: 320px;
         height: 480px;
-        object-fit: contain;
+        border-radius: 15px;
+        overflow: hidden;
         transform: scale(0);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            padding: 50px 45px;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .3s;
+
+            &:nth-child(2) {
+                padding: 65px 50px;
+            }
+
+            &:nth-child(3), &:nth-child(4) {
+                transform: translateY(15px);
+            }
+
+            &.active { opacity: 1; }
+
+            //&.confirm-account { background-color: #161616; }
+
+            &.telephone {
+                padding: 0;
+                opacity: 1;
+                z-index: 1000;
+            }
+        }
     }
 
     &[data-animate="true"] {
         .info { transform: translateX(0); }
-        img { transform: scale(1); }
+        .telephone-view { transform: scale(1); }
+    }
+
+    @media (max-width: $mobile) {
+        & {
+            h2, h3, p {
+                text-align: center;
+            }
+
+            h2, h3 {
+                font-size: 1.5rem !important;
+            }
+
+            p {
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-small) {
+        & {
+            flex-direction: column;
+            padding: 0;
+
+            .info {
+                width: 100%;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+
+    @media (min-width: 621px) and (max-width: $desktop) {
+        & {
+            padding: 2rem 0;
+
+            .info {
+                min-width: 60%;
+                padding: 0 1rem;
+                padding-right: 2rem;
+
+                h2, h3, p {
+                    text-align: right;
+                }
+            }
+
+            img {
+                width: 40%;
+            }
+        }
     }
 }
