@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4822d4ce14b4ee294c9a45c6e1757a2c",
+    "revision": "9e3590b13c1093f9c0e6bfa6184be8e0",
     "url": "/index.html"
   },
   {
-    "revision": "e5df0592028656f7321f",
-    "url": "/static/css/main.765de2b6.chunk.css"
+    "revision": "e0bed8f79d3c8355e6d2",
+    "url": "/static/css/main.89c9fee5.chunk.css"
   },
   {
-    "revision": "c26b0351c799aa53d66e",
-    "url": "/static/js/2.0460c8a4.chunk.js"
+    "revision": "85ec19952a3e03d104a6",
+    "url": "/static/js/2.230c9518.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.0460c8a4.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.230c9518.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5df0592028656f7321f",
-    "url": "/static/js/main.ffd0f31b.chunk.js"
+    "revision": "e0bed8f79d3c8355e6d2",
+    "url": "/static/js/main.9bdd855e.chunk.js"
   },
   {
-    "revision": "e8290cb441621b6af3a9",
-    "url": "/static/js/runtime-main.c1d4f508.js"
+    "revision": "f9a9434917695bd734d2",
+    "url": "/static/js/runtime-main.add7b462.js"
   },
   {
     "revision": "e5419a739754a17d87d5b484aa893967",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alypay3.6510644d.png"
   },
   {
-    "revision": "24b58b26aa46284aa833db8ba9f0d0c8",
-    "url": "/static/media/alypay4.24b58b26.png"
+    "revision": "d00445ea0a3a7079f2acb34f05c916e7",
+    "url": "/static/media/alypay4.d00445ea.jpg"
   },
   {
     "revision": "414418da5c1d1591a2b6956d8f919479",
@@ -76,16 +76,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ethereum.802c6eac.svg"
   },
   {
-    "revision": "437b3b759341d53d42e6096c6d24e314",
-    "url": "/static/media/exchange.437b3b75.png"
+    "revision": "c00be73a61acd3041984be108c2f8fbe",
+    "url": "/static/media/exchange.c00be73a.png"
+  },
+  {
+    "revision": "dff245d05ee2c9e515e45ecc5a9ca0af",
+    "url": "/static/media/exchange2.dff245d0.jpg"
+  },
+  {
+    "revision": "e601578b94d2ae21497abeecd5da57e1",
+    "url": "/static/media/exchange3.e601578b.jpg"
   },
   {
     "revision": "6898ed30bcbcc310b9b4985a177eecf2",
     "url": "/static/media/login-app.6898ed30.png"
-  },
-  {
-    "revision": "a55e71aea268e8cde6d85a38b6ea8578",
-    "url": "/static/media/logo.a55e71ae.png"
   },
   {
     "revision": "4524696dd32407657869f2c338b40335",
