@@ -12,6 +12,10 @@ footer {
     justify-content: space-between;
     padding: 25px;
 
+    img {
+        object-fit: contain;
+    }
+
     .alycoin {
         position: relative;
         background: radial-gradient(circle at center center, #F8F8F8 50%, #000000 100%);
@@ -78,7 +82,8 @@ footer {
     }
 
     .alysystem {
-        width: 8rem;
+        width: 9rem;
+        max-width: 9rem;
     }
 
     .Copyright {

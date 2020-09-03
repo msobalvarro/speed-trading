@@ -78,6 +78,7 @@
             position: relative;
             width: fit-content;
             text-transform: uppercase;
+            word-wrap: break-word;
 
             span {
                 display: inline-block;
@@ -289,6 +290,8 @@
 
     @media (max-width: $mobile) {
         & {
+            min-height: 480px;
+            max-height: 480px;
             flex-direction: column;
             padding: 0;
 
@@ -298,12 +301,13 @@
                 padding: 1rem;
 
                 h2, h3 {
-                    font-size: 1.1rem;
+                    font-size: 1.3rem !important;
+                    text-align: center;
                 }
 
                 .row {
-                    max-width: 90%;
-                    font-size: .9rem;
+                    max-width: 100%;
+                    font-size: .9rem !important;
                     margin-bottom: .5rem;
                 }
             }
@@ -312,7 +316,21 @@
                 display: none;
             }
 
+            &#register {
+                min-height: 520px;
+                max-height: 520px;
+                margin-bottom: 0 !important;
+
+                .go-register {
+                    position: static;
+                    transform: translateX(0) translateY(-2rem);
+                    min-width: 17rem;
+                }
+            }
+
             &#plans {
+                min-height: 620px !important;
+                max-height: 620px !important;
                 width: 100%;
                 border-radius: 0;
 
@@ -330,11 +348,18 @@
             }
 
             &#benefits {
+                min-height: 640px !important;
+                max-height: 640px !important;
+                margin-bottom: 0 !important;
+
                 h2, h3 {
                     font-size: 1.1rem !important;
+                    padding: .5rem;
+                    margin-bottom: 1rem;
                 }
                 
                 .row, p {
+                    width: 100% !important;
                     font-size: .9rem !important;
                 }
             }
@@ -359,8 +384,19 @@
             }
 
             &#benefits {
-                height: 100vh !important;
-                min-height: 100vh !important;
+                min-height: 680px;
+                max-height: 680px;
+            }
+        }
+    }
+
+    @media (min-width: $tablet-small) and (max-width: 690px) {
+        &#benefits {
+            min-height: 540px !important;
+            max-height: 540px !important;
+
+            & > .info h2 {
+                margin-bottom: 1rem;
             }
         }
     }
@@ -369,12 +405,32 @@
         & {
             flex-direction: column;
             padding: 0;
+            min-height: 768px;
+            max-height: 768px;
+
+            .telephone-view {
+                img {
+                    &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(6) {
+                        padding: 20px 25px;
+                    }
+                }
+            }
 
             &#register {
                 margin-bottom: 5rem;
 
+                .info {
+                    width: 95%;
+
+                    h2, h3 { font-size: 1.3rem; }
+                    .row { 
+                        font-size: 1rem;
+                        padding: .5rem;
+                    }
+                }
+
                 .go-register {
-                    bottom: -4rem;
+                    bottom: -3rem !important;
                 }
             }
 
@@ -403,12 +459,18 @@
             }
 
             &#benefits {
-                height: 100vh;
-                min-height: 100vh;
-                margin-bottom: 7rem;
+                min-height: 540px;
+                max-height: 540px;
+                margin-bottom: 2rem !important;
 
                 .info {
                     padding: 1rem;
+
+                    h2, h3 { 
+                        width: 100%;
+                        text-align: center;
+                        font-size: 1.3rem;
+                    }
                 }
 
                 .sub-info {
@@ -422,6 +484,14 @@
                         flex-direction: column;
                         width: 100% !important;
                         padding: 0;
+
+                        h2, h3 {
+                            font-size: 1.15rem !important;
+                            text-align: left;
+                            padding: .5rem;
+                            margin-bottom: 1rem;
+                            width: fit-content !important;
+                        }
 
                         .left, .right, .row {
                             min-width: 100% !important;
@@ -445,7 +515,8 @@
     @media (max-width: $desktop) {
         & {
             padding: 0;
-
+            min-height: 620px;
+            max-height: 620px;
             .info {
                 width: 65%;
                 padding: 1rem 2rem;
@@ -465,7 +536,7 @@
             .telephone-view {
                 img {
                     &:nth-child(3), &:nth-child(4), &:nth-child(6) { 
-                        transform: translateY(10px);
+                        transform: translateY(25px);
                     }
                 }
             }
@@ -485,8 +556,8 @@
             }
 
             &#benefits {
-                height: 80vh;
-                min-height: 80vh;
+                min-height: 480px;
+                max-height: 480px;
                 margin-bottom: 7rem;
 
                 .info {
@@ -528,7 +599,8 @@
             }
 
             .go-register {
-                bottom: 0rem;
+                bottom: 2rem;
+                font-size: 1.1rem;
             }
         }
 

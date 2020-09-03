@@ -18,10 +18,11 @@
         width: 50%;
         transform: translateX(120%);
 
-        h2 {
-            color: $colorYellow;
-            margin-bottom: 15px;
-            font-size: 2.25rem;
+        img {
+            display: block;
+            width: 30rem;
+            margin: 0 auto;
+            object-fit: contain;
         }
 
         p {
@@ -79,16 +80,9 @@
 
     @media (max-width: $mobile) {
         & {
-            h2, h3, p {
-                text-align: center;
-            }
-
-            h2, h3 {
-                font-size: 1.5rem !important;
-            }
-
             p {
                 font-size: 1rem !important;
+                text-align: center;
             }
         }
     }
@@ -101,6 +95,10 @@
             .info {
                 width: 100%;
                 padding: 1rem 2rem;
+
+                img {
+                    width: 80%;
+                }
             }
         }
     }
@@ -114,8 +112,12 @@
                 padding: 0 1rem;
                 padding-right: 2rem;
 
-                h2, h3, p {
+                p {
                     text-align: right;
+                }
+
+                img {
+                    width: 80%;
                 }
             }
 

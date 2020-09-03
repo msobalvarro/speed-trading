@@ -32,7 +32,7 @@ const Register = () => {
     return (
         <div className={`content-investment`} id="register" data-animate="false">
             <div className="info from-left">
-                <h2>¿Cómo ser parte de <span>Speed</span> <span>Tradings</span>?</h2>
+                <h2>¿Cómo ser parte de <span>Speed</span> <span>Tradings?</span></h2>
 
 
                 <div className={`row ${activeItem===1 ? 'active' : ''}`}>
@@ -89,7 +89,7 @@ const Plans = () => {
     return (
         <div className="content-investment invertion-plans" id="plans">
             <div className="info">
-                <h2>¡<span>Elige</span> tu plan de <span>ahorro</span>!</h2>
+                <h2>¡<span>Elige</span> tu plan de <span>ahorro!</span></h2>
 
                 <div className="coin-container">
                     <div className="coin-item">
@@ -191,7 +191,7 @@ const Benefits = () => {
     return (
         <div className="content-investment benefits" id="benefits" data-animate="false">
             <div className="info">
-                <h2>¿Qué <span>Beneficios</span> obtienes al usar <span>Speed</span> <span>Tradings</span>?</h2>
+                <h2>¿Qué <span>Beneficios</span> obtienes al usar <span>Speed</span> <span>Tradings?</span></h2>
 
                 <Refs className={activeItem===1 ? 'active' : ''}/>
 

@@ -1,6 +1,6 @@
 {
-  "short_name": "Speed Tradings",
-  "name": "Speed Tradings Bank",
+  "short_name": "AlySystem",
+  "name": "AlySystem Technology",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2d2d2d",
+  "background_color": "#2d2d2d"
 }
