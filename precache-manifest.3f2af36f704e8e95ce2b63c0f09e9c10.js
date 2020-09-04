@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be2cb1949745a12acbab641db0caecce",
+    "revision": "9ecf094a8c137adc5b25fc306a9150a1",
     "url": "/index.html"
   },
   {
-    "revision": "0eaea9917b8403b784ac",
-    "url": "/static/css/main.c8fffaba.chunk.css"
+    "revision": "2ca4eedd5ed009be1fdc",
+    "url": "/static/css/main.99b2b2e4.chunk.css"
   },
   {
-    "revision": "9970ff0e7518f7166add",
-    "url": "/static/js/2.1ed422e8.chunk.js"
+    "revision": "37978238ef78cbad7648",
+    "url": "/static/js/2.000be2b7.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.1ed422e8.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.000be2b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0eaea9917b8403b784ac",
-    "url": "/static/js/main.183d172e.chunk.js"
+    "revision": "2ca4eedd5ed009be1fdc",
+    "url": "/static/js/main.b95aaf19.chunk.js"
   },
   {
     "revision": "f9a9434917695bd734d2",
@@ -28,20 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/AlyCoin.e5419a73.png"
   },
   {
-    "revision": "8c1095410b4cab33add6b55026dcdc2a",
-    "url": "/static/media/alypay1.8c109541.png"
+    "revision": "8d742d35eecdf612446b067218220a86",
+    "url": "/static/media/alypay1.8d742d35.jpeg"
   },
   {
-    "revision": "e6be3ed678c2b730dd54f63dbdca3045",
-    "url": "/static/media/alypay2.e6be3ed6.png"
+    "revision": "dcaa10fcf9f14e3c50a44e2909d16f9f",
+    "url": "/static/media/alypay2.dcaa10fc.jpeg"
   },
   {
-    "revision": "6510644d81ca51405abe9c1677ebcad5",
-    "url": "/static/media/alypay3.6510644d.png"
+    "revision": "86a98423f2276749d97af0cc72d4109d",
+    "url": "/static/media/alypay3.86a98423.jpeg"
   },
   {
-    "revision": "d00445ea0a3a7079f2acb34f05c916e7",
-    "url": "/static/media/alypay4.d00445ea.jpg"
+    "revision": "8278977383f9ec53de99c0362887d36f",
+    "url": "/static/media/alypay4.82789773.jpeg"
+  },
+  {
+    "revision": "9d5b17d16e2b74e0319c9ac0e8893176",
+    "url": "/static/media/alypay5.9d5b17d1.jpeg"
   },
   {
     "revision": "414418da5c1d1591a2b6956d8f919479",
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "20857cc54ff350c0867a054613411bc7",
     "url": "/static/media/apple.20857cc5.svg"
+  },
+  {
+    "revision": "306b62a9f58d2a91668a55ddc387ebee",
+    "url": "/static/media/arrow-up.306b62a9.svg"
   },
   {
     "revision": "c06bbb3167583777720e5d8d8a8f3675",
