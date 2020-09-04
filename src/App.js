@@ -8,6 +8,7 @@ import Exchange from './Components/Exchange/Exchange'
 import AlyPay from './Components/AlyPay/AlyPay'
 import Footer from './Components/Footer/Footer'
 
+// Función que verifica el scroll del body y detecte cuales son las secciones que estnán detro del área visible para añadirles su respectiva animación
 function checkIntersection(){
 	let nodes = document.documentElement.querySelectorAll('[data-animate]')
     let observer;
