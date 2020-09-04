@@ -107,7 +107,7 @@
                 flex-wrap: wrap;
                 justify-content: flex-end;
                 min-width: 250px;
-                max-width: 460px;
+                max-width: 510px;
 
                 .DownloadLink {
                     width: 50%;
@@ -122,6 +122,14 @@
             img {
                 max-width: 128px;
             }
+        }
+    }
+
+    @media (max-width: 319px) {
+        & {
+            min-height: 510px !important;
+            max-height: 510px !important;
+            margin-bottom: 2rem;
         }
     }
 
@@ -151,10 +159,14 @@
                     margin-bottom: .75rem !important;
                 }
             }
+
+            .cover {
+                display: none;
+            }
         }
     }
 
-    @media (max-width: $mobile) {
+    @media (min-width: 460px) and (max-width: $mobile) {
         & {
             flex-direction: column;
             min-height: 480px !important;
@@ -178,6 +190,16 @@
 
             .cover {
                 display: none;
+            }
+        }
+    }
+
+    @media (min-width: 460px) and (max-width: 721px) {
+        & {
+            .apps-links {
+                justify-content: center !important;
+                align-items: center !important;
+                transform: translateY(-1.5rem);
             }
         }
     }
@@ -237,7 +259,8 @@
         & {
             padding: 0;
             margin-top: 4rem;
-            max-height: 680px;
+            height: 580px;
+            max-height: 580px;
 
             .info {
                 width: 70%;
@@ -307,6 +330,7 @@
     @media (min-width: 1025px) {
         & {
             min-height: 680px;
+            height: 100vh;
             max-height: 720px;
 
             .info {

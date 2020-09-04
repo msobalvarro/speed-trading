@@ -24,6 +24,33 @@ nav.navigaion-bar {
         display: none;
     }
 
+    .top-scroll {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        object-fit: contain;
+        width: 2rem;
+        height: 2rem;
+        padding: .25rem;
+        background-color: darken($colorSecondary, 25);
+        border-radius: 5px;
+        transform: rotate(180deg);
+        box-shadow: 0 0 10px -1px rgba(#fff, .5);
+        z-index: 1000000;
+        transition: background-color .35s;
+        animation: to-top .75s infinite alternate linear;
+
+        &:hover {
+            background-color: darken($colorSecondary, 30);
+        }
+
+        @keyframes to-top {
+            0% { transform: translateY(-2px) rotate(180deg); }
+            50% { transform: translateY(0px) rotate(180deg); }
+            100% { transform: translateY(2px) rotate(180deg); }
+        }
+    }
+
     .list {
         display: flex;
         flex-direction: row;

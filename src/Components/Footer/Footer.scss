@@ -4,31 +4,43 @@
 $icon-fill: '9ed3da';
 
 footer {
+    box-sizing: border-box;
     background-color: $colorSecondary;
     color: $colorMain;
     font-weight: bold;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 25px;
+    padding-bottom: 2rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
     img {
         object-fit: contain;
     }
 
     .alycoin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
         background: radial-gradient(circle at center center, #F8F8F8 50%, #000000 100%);
         border-radius: 100%;
-        width: 4rem;
-        height: 4rem;
+        width: 25vmin;
+        height: 25vmin;
+        max-width: 6rem;
+        max-height: 6rem;
         padding: .6rem;
-        z-index: 10000;
+        z-index: 1000;
         transform: translateY(-.5rem);
 
         .logo {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
             object-fit: contain;
             animation: rotate-alycoin 4s infinite linear;
 
@@ -47,9 +59,9 @@ footer {
 
         .letters {
             position: absolute;
-            bottom: -1.5rem;
+            bottom: -2.5rem;
             left: 50%;
-            width: 4.5rem;
+            width: 8rem;
             transform: translateX(-50%);
             margin: 0 auto;
         }
@@ -81,57 +93,33 @@ footer {
         }
     }
 
-    .alysystem {
-        width: 9rem;
-        max-width: 9rem;
-    }
-
     .Copyright {
         display: flex;
         flex-direction: column;
+        font-size: clamp(.9rem, 2.5vw, 1.1rem);
 
         span {
             margin-bottom: .5rem;
         }
     }
 
-    .logos {
-        display: flex;
-        flex-direction: row;
-
-        .alycoin {
-            margin-right: 1rem;
-        }
-    }
-
-    .block {
-        display: flex;
-        align-items: center;
-
-        a.facebook {
-            margin-right: 25px;
-
-            img {
-                max-width: 32px;
-            }
-        }
-    }
-
     .support-container {
         position: relative;
-        width: 18rem;
+        min-width: 18rem;
         padding-top: 1.75rem;
+        margin-bottom: 1rem;
 
         p {
             position: absolute;
             top: 0;
             left: 0;
-            font-size: 1rem;
             padding: .05rem .5rem;
+            font-size: clamp(.9rem, 2.5vw, 1.1rem);
             opacity: 0;
             transition: opacity .35s;
 
             a {
+                display: inline-block;
                 font-weight: normal;
                 text-decoration-style: dashed;
                 font-size: .85rem;
@@ -141,6 +129,7 @@ footer {
 
             &.active {
                 opacity: 1;
+                width: 100%;
             }
         }
     }
@@ -153,9 +142,8 @@ footer {
         background-color: $colorMain;
         font-weight: normal;
         border-radius: 7px;
-        width: 18rem;
+        width: 100%;
         padding: .5rem;
-        padding-right: 1rem;
         text-decoration: none;
         transform: scale(1);
         transition: transform .25s;
@@ -222,27 +210,42 @@ footer {
             }
         }
 
-    @media (max-width: 560px) {
+    @media (max-width: $mobile) {
         & {
             flex-direction: column;
+            align-items: center;
 
-            .Copyright, .support-container, .logos {
+            .Copyright {
+                text-align: center;
+            }
+
+            .support-container {
+                min-width: 100%;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .alycoin {
+                margin: .5rem 0;
+            }
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 560px) {
+        & {
+            .Copyright {
                 width: 100% !important;
+            }
+
+            .Copyright, .support-container {
                 margin-bottom: 1rem;
                 align-items: flex-start !important;
                 justify-content: flex-start !important;
             }
 
-            .logos {
-                margin-top: .5rem;
-            }
-
-            .alycoin {
-                &:after {
-                    right: auto;
-                    left: calc(100% - 10px);
-                    transform-origin: bottom left;
-                }
+            .support-container {
+                width: 70%;
+                min-width: 70%;
             }
         }
     }
@@ -250,7 +253,7 @@ footer {
     @media (max-width: 960px) {
         & {
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             .Copyright {
                 width: 100%;
@@ -258,7 +261,7 @@ footer {
                 margin-bottom: 1.5rem;
             }
 
-            .support-container, .logos {
+            .support-container{
                 width: 50%;
                 justify-content: flex-end;
             }

@@ -27,43 +27,42 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="Copyright">
-                <span>&copy;Copyright {new Date().getFullYear()} AlySystem | RUC J031000037155</span>
+            <div className="container">
+                <div className="Copyright">
+                    <span>&copy;Copyright {new Date().getFullYear()} AlySystem | RUC J031000037155</span>
 
-                <div className='social-links'>
-                    <a href={twitter} target='_blank' rel="noopener noreferrer" className="social-icon twitter"></a>
-                    <a href={facebook} target='_blank' rel="noopener noreferrer" className='social-icon facebook'></a>
-                    <a href={instagram} target='_blank' rel="noopener noreferrer" className='social-icon instagram'></a>
-                    <a href={telegram} target='_blank' rel="noopener noreferrer" className='social-icon telegram'></a>
-                    <a href={whatsapp} target='_blank' rel="noopener noreferrer" className='social-icon whatsapp'></a>
+                    <div className='social-links'>
+                        <a href={twitter} target='_blank' rel="noopener noreferrer" className="social-icon twitter"></a>
+                        <a href={facebook} target='_blank' rel="noopener noreferrer" className='social-icon facebook'></a>
+                        <a href={instagram} target='_blank' rel="noopener noreferrer" className='social-icon instagram'></a>
+                        <a href={telegram} target='_blank' rel="noopener noreferrer" className='social-icon telegram'></a>
+                        <a href={whatsapp} target='_blank' rel="noopener noreferrer" className='social-icon whatsapp'></a>
+                    </div>
+                </div>
+
+                <div className='support-container'>
+                    <p className={active===1 ? 'active' : ''}>
+                        ¿Consultas? <a href={urlPDF} target="_blank" download>ver más información</a>
+                    </p>
+
+                    <p className={active===2 ? 'active' : ''}>
+                        ¿Dudas? <a href={urlPDF} target="_blank" download>ver más información</a>
+                    </p>
+
+                    <p className={active===3 ? 'active' : ''}>
+                        ¿Inquietudes? <a href={urlPDF} target="_blank" download>ver más información</a>
+                    </p>
+
+                    <a target="_blank" className="support" href="mailto:tradingspeed4@gmail.com?subject=Soporte">
+                        <span className='social-icon email'></span>
+                        Contactar a soporte
+                    </a>
                 </div>
             </div>
 
-            <div className='support-container'>
-                <p className={active===1 ? 'active' : ''}>
-                    ¿Consultas? <a href={urlPDF} target="_blank" download>ver más información</a>
-                </p>
-
-                <p className={active===2 ? 'active' : ''}>
-                    ¿Dudas? <a href={urlPDF} target="_blank" download>ver más información</a>
-                </p>
-
-                <p className={active===3 ? 'active' : ''}>
-                    ¿Inquietudes? <a href={urlPDF} target="_blank" download>ver más información</a>
-                </p>
-
-                <a target="_blank" className="support" href="mailto:tradingspeed4@gmail.com?subject=Soporte">
-                    <span className='social-icon email'></span>
-                    Contactar a soporte
-                </a>
-            </div>
-
-            <div className="logos">
-                <div className="alycoin">
-                    <img src={AlyCoin} alt="alycoin" className="logo" />
-                    <img src={AlyCoinLetters} alt="alycoin" className="letters" />
-                </div>
-                <img src={AlySystem} alt="alysystem" className="alysystem" />
+            <div className="alycoin">
+                <img src={AlyCoin} alt="alycoin" className="logo" />
+                <img src={AlyCoinLetters} alt="alycoin" className="letters" />
             </div>
 
         </footer>
