@@ -127,9 +127,18 @@
 
     @media (max-width: 319px) {
         & {
+            justify-content: center;
+            align-items: center;
             min-height: 510px !important;
             max-height: 510px !important;
-            margin-bottom: 2rem;
+            padding: 2rem 2rem !important;
+            padding-top: 5rem !important;
+
+            .info {
+                padding: 0 !important;
+                margin-top: 4rem !important;
+                text-align: justify !important;
+            }
         }
     }
 

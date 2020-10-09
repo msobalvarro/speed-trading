@@ -115,8 +115,7 @@ const Refs = ({className=''}) => {
                     <h3>Bono por referir</h3>
 
                     <p className="text-info">
-                        Siendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y
-                        comisionar un 5% de su inversión directa.
+                        Siendo parte de Speed Tradings podrás compartir la oportunidad con tus amigos y comisionar un porcentaje (entre el 1% y el 3%) de su inversión directa.
                     </p>
 
                     <img src={customRef} className="large" alt="custom-ref" />
@@ -142,7 +141,7 @@ const Refs = ({className=''}) => {
                         <span className="number">3</span>
 
                         <p>
-                            En el momento de que tu referido realice el pago de su plan te llegará un correo confirmando el pago de comisión del 5% según la inversión realizada.
+                            En el momento de que tu referido realice el pago de su plan te llegará un correo confirmando el pago de comisión del 3% según la inversión realizada.
                         </p>
                     </div>
                 </div>
@@ -159,7 +158,7 @@ const Payments = ({className=''}) => {
                     <h3>Pagos de Inversiones</h3>
 
                     <p>
-                        Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada. <b>se debitará el FEE del minero en el envío.</b>
+                        Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada. <b>Se debitará el 2% de FEE en el envío.</b>
                     </p>
                 </div>
 

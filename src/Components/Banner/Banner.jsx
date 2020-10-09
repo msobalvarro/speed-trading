@@ -5,8 +5,6 @@ import './Banner.scss'
 import SpeedBanner1 from '../../Assets/speed-banner-1.png'
 import SpeedBanner2 from '../../Assets/speed-banner-2.png'
 
-// Import Components
-import { AndroidLink, IosLink } from "../AppDownloadLink/AppDownloadLink"
 
 const Banner = () => {
     const [loadedImg, setLoadedImg] = useState(false)
@@ -30,15 +28,10 @@ const Banner = () => {
             <img ref={speedBanner2Ref} src={SpeedBanner2} className={`cover speedbanner2  ${loadedImg2 ? 'animate' : ''}`} alt="banner" />
 
             <div className="info">
-                <h1>¿Qué es <span>Speed</span> <span>Tradings?</span></h1>
+                <h1>¿Qué es <span>AlySystem?</span></h1>
 
                 <p>
-                    Es tu aplicación multiservicios de inversión y usabilidad en criptomonedas de AlySystem.
-                </p>
-
-                <p className="apps-links">
-                    <AndroidLink/>
-                    <IosLink/>
+                    Es una empresa dedicada al desarrollo de aplicaciones para la usabilidad de las criptomonedas y tiene su propia criptomoneda AlyCoin
                 </p>
             </div>
         </div>

@@ -1,0 +1,120 @@
+@import "../../Styles/constants.scss";
+
+.SpeedTradings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    min-width: 350px;
+    max-width: 850px;
+    background-color: rgba(#000, .4);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    box-shadow: $animationShadow;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        animation: from-right .45s;
+
+        h1 {
+            position: relative;
+            display: block;
+            color: $colorSecondary;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2.25rem;
+            word-wrap: break-word;
+
+            span {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: auto !important;
+
+                &:first-letter {
+                    color: darken($colorSecondary, 35);
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $colorSecondary;
+                transform: scaleX(.45);
+                transform-origin: right center;
+                transition: transform .2s;
+            }
+
+            &:hover {
+                &:before { transform: scaleX(1.05); }
+            }
+        }
+
+        p {
+            margin: 25px 0;
+            font-size: 1.35rem;
+            text-align: center;
+            width: 100%;
+            line-height: 1.5;
+        }
+    }
+
+    .apps-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .DownloadLink {
+            width: 50%;
+            min-width: 220px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a.button-google-play {
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+
+    @media (max-width: 459px) {
+        box-shadow: none;
+        width: 100%;
+        min-width: 100%;
+        border-radius: 0;
+
+        .DownloadLink {
+            margin-right: 0 !important;
+        }
+    }
+
+    @media (max-width: 910px) {
+        .apps-links{
+            flex-direction: column;
+            align-items: center;
+        }
+        .DownloadLink {
+            margin-right: 0 !important;
+        }
+    }
+}
