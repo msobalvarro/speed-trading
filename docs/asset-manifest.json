@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38dbcd27.chunk.css",
+    "main.js": "/static/js/main.64a5d1d3.chunk.js",
+    "main.js.map": "/static/js/main.64a5d1d3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c1d4f508.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c1d4f508.js.map",
+    "static/js/2.82d0789e.chunk.js": "/static/js/2.82d0789e.chunk.js",
+    "static/js/2.82d0789e.chunk.js.map": "/static/js/2.82d0789e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.38cccaf0eb3fc680297de216ac155b74.js": "/precache-manifest.38cccaf0eb3fc680297de216ac155b74.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.38dbcd27.chunk.css.map": "/static/css/main.38dbcd27.chunk.css.map",
+    "static/js/2.82d0789e.chunk.js.LICENSE.txt": "/static/js/2.82d0789e.chunk.js.LICENSE.txt",
+    "static/media/alypay.png": "/static/media/alypay.87df90d0.png",
+    "static/media/Banner.scss": "/static/media/banner-cover.4e779b6c.png",
+    "static/media/custom-plan.png": "/static/media/custom-plan.b2818639.png",
+    "static/media/dashboard.png": "/static/media/dashboard.d68b8442.png",
+    "static/media/exchange.png": "/static/media/exchange.a59915d3.png",
+    "static/media/logo.png": "/static/media/logo.a55e71ae.png",
+    "static/media/ref.png": "/static/media/ref.06bbc19a.png",
+    "static/media/splash.png": "/static/media/splash.bbd6a942.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c1d4f508.js",
+    "static/js/2.82d0789e.chunk.js",
+    "static/css/main.38dbcd27.chunk.css",
+    "static/js/main.64a5d1d3.chunk.js"
+  ]
+}

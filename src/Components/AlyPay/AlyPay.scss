@@ -1,4 +1,9 @@
+@import "../../Styles/constants.scss";
+
 .alypay {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 25px;
     
@@ -17,14 +22,115 @@
             width: 50%;
             font-size: 1.5em;
         }
+    }
 
-        .button-google-play {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 1em;
-            margin-right: 1em;
-            flex: 1;
+    img {
+        width: 40%;
+    }
+
+    .info, .telephone-view {
+        transition: transform 1s;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        font-size: 1.35em;
+        line-height: 1.5;
+        transform: translateX(-120%);
+
+        img {
+            width: 30rem;
+            margin: 0 auto;
+            margin-bottom: 1rem;
         }
     }
 
+    &[data-animate="true"] {
+        .info { transform: translateX(0); }
+
+        .telephone-view { transform: scale(1); }
+    }
+
+    .telephone-view {
+        position: relative;
+        width: 260px;
+        height: 480px;
+        border-radius: 15px;
+        overflow: hidden;
+        transform: scale(0);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            padding: 60px 20px;
+            object-fit: fill;
+            opacity: 0;
+            transition: opacity .3s;
+
+            &.active { opacity: 1; }
+
+            //&.confirm-account { background-color: #161616; }
+
+            &.telephone {
+                padding: 0;
+                opacity: 1;
+                z-index: 1000;
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        & {
+            p {
+                font-size: 1rem !important;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-small) {
+        & {
+            flex-direction: column;
+            padding: 1rem 0;
+
+            .info {
+                width: 100%;
+                padding: 1rem 2rem;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 621px) and (max-width: $desktop) {
+        & {
+            padding: 2rem 0;
+
+            .info {
+                min-width: 60%;
+                padding: 0 1rem;
+
+                h2, h3, p {
+                    text-align: left;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .telephone-view {
+                margin-right: 1rem;
+            }
+        }
+    }
 }

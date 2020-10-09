@@ -3,26 +3,124 @@
 .content-exchange {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 25px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 3rem 4rem;
+    margin: 1.5rem 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .info, .telephone-view {
+        transition: transform 1s;
+    }
 
     .info {
-        width: 40%;
+        width: 50%;
+        transform: translateX(120%);
 
-        h2 {
-            color: $colorYellow;
-            margin-bottom: 15px;
+        img {
+            display: block;
+            width: 30rem;
+            margin: 0 auto;
+            object-fit: contain;
         }
 
         p {
+            width: 100%;
             margin-bottom: 15px;
-
-            font-size: 1.8em;
+            font-size: 1.35rem;
+            line-height: 1.5;
         }
     }
 
-    img {
-        width: 30%;
+    .telephone-view {
+        position: relative;
+        width: 320px;
+        height: 480px;
+        border-radius: 15px;
+        overflow: hidden;
+        transform: scale(0);
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            padding: 45px 10px;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .3s;
+            transform: translateY(20px);
+
+            &.active { opacity: 1; }
+
+            &.telephone {
+                padding: 0;
+                opacity: 1;
+                transform: translateY(0);
+                z-index: 1000;
+            }
+        }
+    }
+
+    &[data-animate="true"] {
+        .info { transform: translateX(0); }
+        .telephone-view { transform: scale(1); }
+    }
+
+    @media (max-width: $mobile) {
+        & {
+            p {
+                font-size: 1rem !important;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: $tablet-small) {
+        & {
+            flex-direction: column;
+            padding: 0;
+
+            .info {
+                width: 100%;
+                padding: 1rem 2rem;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 621px) and (max-width: $desktop) {
+        & {
+            padding: 2rem 0;
+
+            .info {
+                min-width: 60%;
+                padding: 0 1rem;
+                padding-right: 2rem;
+
+                p {
+                    text-align: left;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .telephone-view {
+                width: 200px;
+                margin-right: 1rem;
+
+                img {
+                    padding: 10px 15px;
+                }
+            }
+        }
     }
 }
