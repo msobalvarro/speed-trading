@@ -26,7 +26,7 @@ const Navbar = () => {
 
                 <a onClick={_ => setShowNavbar(false)} href="#benefits" className="item">Beneficios</a>
 
-                <a onClick={_ => setShowNavbar(false)} href="https://dashboard-speedtradings-bank.herokuapp.com" target="_bank" className="item">Dashboard</a>
+                <a onClick={_ => setShowNavbar(false)} href="https://www.speedtradings-bank.com" target="_bank" className="item">Dashboard</a>
 
                 <a onClick={_ => setShowNavbar(false)} href="#plans" className="item">Planes de inversión</a>
                 
