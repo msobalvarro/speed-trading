@@ -6,7 +6,7 @@ import loginApp from '../../Assets/login-app.png'
 import basicInfo from '../../Assets/basic-info.png'
 import customPlan from '../../Assets/custom-plan.png'
 import confirmAccout from '../../Assets/confirm-account.png'
-import dashboardApp  from '../../Assets/dashboard-app.png'
+import dashboardApp from '../../Assets/dashboard-app.png'
 import telephone from '../../Assets/telephone.png'
 import customRef from '../../Assets/ref.png'
 
@@ -21,9 +21,9 @@ const Register = () => {
     // Realiza el cambio del item activo luego de 5 segundos
     useEffect(_ => {
         setTimeout(_ => {
-            if(activeItem === 5) {
+            if (activeItem === 5) {
                 setActiveItem(1)
-            }else {
+            } else {
                 setActiveItem(activeItem + 1)
             }
         }, 3000)
@@ -35,31 +35,31 @@ const Register = () => {
                 <h2>¿Cómo ser parte de <span>Speed</span> <span>Tradings?</span></h2>
 
 
-                <div className={`row ${activeItem===1 ? 'active' : ''}`}>
+                <div className={`row ${activeItem === 1 ? 'active' : ''}`}>
                     <span className="number">1</span>
 
                     <p>Regístrate a través de link de referido o desde tu app Speed tradings.</p>
                 </div>
 
-                <div className={`row ${activeItem===2 ? 'active' : ''}`}>
+                <div className={`row ${activeItem === 2 ? 'active' : ''}`}>
                     <span className="number">2</span>
 
                     <p>Llena los datos del formulario de registro.</p>
                 </div>
 
-                <div className={`row ${activeItem===3 ? 'active' : ''}`}>
+                <div className={`row ${activeItem === 3 ? 'active' : ''}`}>
                     <span className="number">3</span>
 
                     <p>Deposita tu plan de inversion en las wallets indicadas.</p>
                 </div>
 
-                <div className={`row ${activeItem===4 ? 'active' : ''}`}>
+                <div className={`row ${activeItem === 4 ? 'active' : ''}`}>
                     <span className="number">4</span>
 
                     <p>Verifica tu correo electrónico.</p>
                 </div>
 
-                <div className={`row ${activeItem===5 ? 'active' : ''}`}>
+                <div className={`row ${activeItem === 5 ? 'active' : ''}`}>
                     <span className="number">5</span>
 
                     <p>Recibe tu primer reporte de pago dentro de 24 horas.</p>
@@ -67,17 +67,17 @@ const Register = () => {
             </div>
 
             <div className="telephone-view from-scale-0">
-                <img src={telephone} alt="" className="telephone"/>
-                <img src={loginApp} alt="" className={`login-app ${activeItem===1 ? 'active' : ''}`}/>
-                <img src={basicInfo} alt="" className={`basic-info ${activeItem===2 ? 'active' : ''}`}/>
-                <img src={customPlan} alt="" className={`custom-plan ${activeItem===3 ? 'active' : ''}`}/>
-                <img src={confirmAccout} alt="" className={`confirm-account ${activeItem===4 ? 'active' : ''}`}/>
-                <img src={dashboardApp} alt="" className={`dashboard-app ${activeItem===5 ? 'active' : ''}`}/>
+                <img src={telephone} alt="" className="telephone" />
+                <img src={loginApp} alt="" className={`login-app ${activeItem === 1 ? 'active' : ''}`} />
+                <img src={basicInfo} alt="" className={`basic-info ${activeItem === 2 ? 'active' : ''}`} />
+                <img src={customPlan} alt="" className={`custom-plan ${activeItem === 3 ? 'active' : ''}`} />
+                <img src={confirmAccout} alt="" className={`confirm-account ${activeItem === 4 ? 'active' : ''}`} />
+                <img src={dashboardApp} alt="" className={`dashboard-app ${activeItem === 5 ? 'active' : ''}`} />
             </div>
 
-            <a href="https://dashboard-speedtradings-bank.herokuapp.com/#/register" target="_blank" rel="noopener noreferrer" className="go-register">
+            <a href="https://www.speedtradings-bank.com/#/register" target="_blank" rel="noopener noreferrer" className="go-register">
                 Registrarme en Speed Tradings
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 24 24"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" stroke="#2d2d2d" strokeWidth="2px"/></svg>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 24 24"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" stroke="#2d2d2d" strokeWidth="2px" /></svg>
             </a>
         </div>
     )
@@ -93,12 +93,12 @@ const Plans = () => {
 
                 <div className="coin-container">
                     <div className="coin-item">
-                        <img src={BitcoinLogo} alt=""/>
+                        <img src={BitcoinLogo} alt="" />
                         <p>Bitcoin</p>
                     </div>
-                    
+
                     <div className="coin-item">
-                        <img src={EthereumLogo} alt=""/>
+                        <img src={EthereumLogo} alt="" />
                         <p>Ethereum</p>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const Plans = () => {
     )
 }
 
-const Refs = ({className=''}) => {
+const Refs = ({ className = '' }) => {
     return (
         <div className={`content-investment reset sub-info ${className}`} >
             <div className="info">
@@ -150,7 +150,7 @@ const Refs = ({className=''}) => {
     )
 }
 
-const Payments = ({className=''}) => {
+const Payments = ({ className = '' }) => {
     return (
         <div className={`content-investment reset sub-info payments ${className}`}>
             <div className="info">
@@ -183,7 +183,7 @@ const Benefits = () => {
 
     useEffect(_ => {
         setTimeout(_ => {
-            setActiveItem(activeItem===2 ? 1 : 2)
+            setActiveItem(activeItem === 2 ? 1 : 2)
         }, 12000)
     }, [activeItem])
 
@@ -192,9 +192,9 @@ const Benefits = () => {
             <div className="info">
                 <h2>¿Qué <span>Beneficios</span> obtienes al usar <span>Speed</span> <span>Tradings?</span></h2>
 
-                <Refs className={activeItem===1 ? 'active' : ''}/>
+                <Refs className={activeItem === 1 ? 'active' : ''} />
 
-                <Payments className={activeItem===2 ? 'active' : ''}/>
+                <Payments className={activeItem === 2 ? 'active' : ''} />
             </div>
         </div>
     )
@@ -203,7 +203,7 @@ const Benefits = () => {
 const Investment = () => {
     return (
         <Fragment>
-            <Register/>
+            <Register />
 
             <Plans />
 
