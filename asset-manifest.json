@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.889699ba.chunk.css",
-    "main.js": "/static/js/main.45ed0807.chunk.js",
-    "main.js.map": "/static/js/main.45ed0807.chunk.js.map",
+    "main.css": "/static/css/main.e6d84230.chunk.css",
+    "main.js": "/static/js/main.654bf650.chunk.js",
+    "main.js.map": "/static/js/main.654bf650.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.add7b462.js",
     "runtime-main.js.map": "/static/js/runtime-main.add7b462.js.map",
-    "static/js/2.000be2b7.chunk.js": "/static/js/2.000be2b7.chunk.js",
-    "static/js/2.000be2b7.chunk.js.map": "/static/js/2.000be2b7.chunk.js.map",
+    "static/js/2.9d97a74f.chunk.js": "/static/js/2.9d97a74f.chunk.js",
+    "static/js/2.9d97a74f.chunk.js.map": "/static/js/2.9d97a74f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.86ea2495632100ce7c03e9af264b51af.js": "/precache-manifest.86ea2495632100ce7c03e9af264b51af.js",
+    "precache-manifest.650370b6c2c71a24437db9410bb21757.js": "/precache-manifest.650370b6c2c71a24437db9410bb21757.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.889699ba.chunk.css.map": "/static/css/main.889699ba.chunk.css.map",
-    "static/js/2.000be2b7.chunk.js.LICENSE.txt": "/static/js/2.000be2b7.chunk.js.LICENSE.txt",
+    "static/css/main.e6d84230.chunk.css.map": "/static/css/main.e6d84230.chunk.css.map",
+    "static/js/2.9d97a74f.chunk.js.LICENSE.txt": "/static/js/2.9d97a74f.chunk.js.LICENSE.txt",
     "static/media/AlyCoin.png": "/static/media/AlyCoin.e5419a73.png",
     "static/media/alypay1.jpeg": "/static/media/alypay1.8d742d35.jpeg",
     "static/media/alypay2.jpeg": "/static/media/alypay2.dcaa10fc.jpeg",
@@ -32,6 +32,7 @@
     "static/media/exchange2.jpeg": "/static/media/exchange2.7c1b8f2b.jpeg",
     "static/media/exchange3.jpeg": "/static/media/exchange3.114ec3e9.jpeg",
     "static/media/exchange4.jpeg": "/static/media/exchange4.c0a81ee4.jpeg",
+    "static/media/location-pin.e4f607e6.svg": "/static/media/location-pin.e4f607e6.svg",
     "static/media/login-app.png": "/static/media/login-app.6898ed30.png",
     "static/media/menu.svg": "/static/media/menu.361b7385.svg",
     "static/media/ref.png": "/static/media/ref.4524696d.png",
@@ -42,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.add7b462.js",
-    "static/js/2.000be2b7.chunk.js",
-    "static/css/main.889699ba.chunk.css",
-    "static/js/main.45ed0807.chunk.js"
+    "static/js/2.9d97a74f.chunk.js",
+    "static/css/main.e6d84230.chunk.css",
+    "static/js/main.654bf650.chunk.js"
   ]
 }
