@@ -104,6 +104,20 @@ footer {
         }
     }
 
+    .locations {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: normal;
+        margin-bottom: .5rem;
+        font-size: 1rem;
+
+        svg {
+            width: 1rem;
+            margin-right: .5rem;
+        }
+    }
+
     .support-container {
         position: relative;
         min-width: 18rem;
@@ -159,6 +173,7 @@ footer {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        margin-top: 1rem;
 
         p, a {
             margin-right: .5rem;
