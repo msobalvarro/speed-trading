@@ -4,17 +4,12 @@ $backgroundHover: rgba(255, 255, 255, 0.2);
 $backgroundActive: rgba(255, 255, 255, 0.3);
 
 nav.navigaion-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     align-items: center;
-    //background: $colorMainGradient;
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
-    padding-top: 1rem;
-    z-index: 10000;
+    margin-top: 40px;
+    width: 100%;
 
     img.brand-logo {
         max-height: 5rem;

@@ -1,0 +1,24 @@
+.prices-navbar {
+    background-color: rgba(22, 22, 22, 0.549);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+
+    li {
+        align-items: center;
+        list-style: none;
+        display: flex;
+
+        img {
+            margin-right: 5px;
+            max-width: 32px;
+        }
+    }
+}

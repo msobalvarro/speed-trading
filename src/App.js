@@ -8,6 +8,7 @@ import Exchange from './Components/Exchange/Exchange'
 import AlyPay from './Components/AlyPay/AlyPay'
 import Footer from './Components/Footer/Footer'
 import SpeedTradings from './Components/SpeedTradings/SpeedTradings'
+import Prices from './Components/Prices/Prices.component'
 
 // Función que verifica el scroll del body y detecte cuales son las secciones que estnán detro del área visible para añadirles su respectiva animación
 function checkIntersection(){
@@ -38,6 +39,8 @@ const App = () => {
 
 	return (
 		<Fragment>
+            <Prices />
+
 			<Navbar />
 
 			<Banner />
