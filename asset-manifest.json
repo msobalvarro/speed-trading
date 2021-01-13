@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.23c9f7d9.chunk.css",
-    "main.js": "/static/js/main.47019132.chunk.js",
-    "main.js.map": "/static/js/main.47019132.chunk.js.map",
+    "main.css": "/static/css/main.3922baac.chunk.css",
+    "main.js": "/static/js/main.866e7e12.chunk.js",
+    "main.js.map": "/static/js/main.866e7e12.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.add7b462.js",
     "runtime-main.js.map": "/static/js/runtime-main.add7b462.js.map",
     "static/js/2.ce2f6476.chunk.js": "/static/js/2.ce2f6476.chunk.js",
     "static/js/2.ce2f6476.chunk.js.map": "/static/js/2.ce2f6476.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.dcfd4865b91ec19709e0d84e521f4e69.js": "/precache-manifest.dcfd4865b91ec19709e0d84e521f4e69.js",
+    "precache-manifest.ece9b99eb445e57ff2d45572f9380923.js": "/precache-manifest.ece9b99eb445e57ff2d45572f9380923.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.23c9f7d9.chunk.css.map": "/static/css/main.23c9f7d9.chunk.css.map",
+    "static/css/main.3922baac.chunk.css.map": "/static/css/main.3922baac.chunk.css.map",
     "static/js/2.ce2f6476.chunk.js.LICENSE.txt": "/static/js/2.ce2f6476.chunk.js.LICENSE.txt",
     "static/media/AlyCoin-letters.png": "/static/media/AlyCoin-letters.90871585.png",
     "static/media/AlyCoin.png": "/static/media/AlyCoin.e5419a73.png",
@@ -45,7 +45,7 @@
   "entrypoints": [
     "static/js/runtime-main.add7b462.js",
     "static/js/2.ce2f6476.chunk.js",
-    "static/css/main.23c9f7d9.chunk.css",
-    "static/js/main.47019132.chunk.js"
+    "static/css/main.3922baac.chunk.css",
+    "static/js/main.866e7e12.chunk.js"
   ]
 }
