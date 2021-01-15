@@ -12,21 +12,30 @@
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(5, 1fr);
+
+    display: flex;
+    flex-wrap: nowrap;
     overflow: auto;
+
+    @media (min-width: 580px) {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+      grid-template-rows: 1fr;
+    }
   }
 
   li {
+    margin-right: 16px;
     align-items: center;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    @media (min-width: 800px) {
+    @media (min-width: 850px) {
       flex-direction: row;
+      margin-right: 0;
     }
 
     img {
