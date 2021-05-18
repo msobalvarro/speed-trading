@@ -12,7 +12,7 @@ const SpeedTradings = () => {
                 <h1>¿Qué es <span>Speed</span> <span>Tradings?</span></h1>
 
                 <p>
-                    Es tu aplicación multiservicios de inversión y usabilidad en criptomonedas de AlySystem
+                    Es una aplicación multiservicios de inversión y usabilidad en criptomonedas de AlySystem
                 </p>
             </div>
 

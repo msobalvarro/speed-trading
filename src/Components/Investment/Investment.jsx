@@ -128,7 +128,7 @@ const Refs = ({ className = '' }) => {
                     <div className="row">
                         <span className="number">1</span>
 
-                        <p>Tienes que estar activo con tu plan en Speed Tradings.</p>
+                        <p>Debes de estar activo con tu plan en Speed Tradings.</p>
                     </div>
 
                     <div className="row">
@@ -158,7 +158,7 @@ const Payments = ({ className = '' }) => {
                     <h3>Pagos de Inversiones</h3>
 
                     <p>
-                        Todos los pagos se realizaran automáticamente los días sabados a la wallet registrada. <b>Se debitará el 2% de FEE en el envío.</b>
+                        Todos los pagos se realizarán automáticamente los días sabados a la wallet registrada. <b>Se debitará el 2% de FEE en el envío.</b>
                     </p>
                 </div>
 

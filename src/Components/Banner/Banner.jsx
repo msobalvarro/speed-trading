@@ -31,7 +31,7 @@ const Banner = () => {
                 <h1>¿Qué es <span>AlySystem?</span></h1>
 
                 <p>
-                    Es una empresa dedicada al desarrollo de aplicaciones para la usabilidad de las criptomonedas y tiene su propia criptomoneda AlyCoin
+                    Es una empresa dedicada al desarrollo de aplicaciones para la usabilidad de las criptomonedas la cual posee su propia moneda con nombre AlyCoin
                 </p>
             </div>
         </div>
