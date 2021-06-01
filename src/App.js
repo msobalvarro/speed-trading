@@ -39,11 +39,11 @@ const App = () => {
 
 	return (
 		<Fragment>
-            <Prices />
-
 			<Navbar />
 
 			<Banner />
+
+            <Prices />
 
             <SpeedTradings />
 
